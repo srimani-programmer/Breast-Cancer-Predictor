@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Breast Cancer Prediction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid" style="background-color: #fff">
+  <div class="jumbotron" style="background-color: #ff8566">
+    <h1>Breast Cancer Prediction</h1>      
+    <p>Predicts whether the cancer is benign or malignant with an accuracy of more than <b>95%</b>.</p>
+  </div>
+
+  <div class="container">
+    
+
+    <div class="jumbotron">
+      <h1>Cancer is Predicted to be {{output}}</h1>      
+      <p>The Probability of {{output}} is {{accuracy}} %.</p>
+      <p>The time taken to predict is {{time}} s.</p>
+    </div>
+
+    <div class="row" style="margin: 0px">
+      <div class="col-sm-6 " style="background-color:#ccddff;padding: 15px">
+        <h2 style="text-align: center;">Benign Tumors</h2>
+        <p style="font-size: 1.2em;">
+          Since benign tumors are harmless, doctors may opt to leave the lump alone rather than remove it. If you are experiencing discomfort, irritation or pressure, let your doctor know so that she can plan to remove it for you and improve your comfort. 
+        </p>
+      </div>
+      <div class="col-sm-6" style="background-color:#ffccee;padding: 15px">
+        <h2 style="text-align: center;">Malignant tumors</h2>
+        <p style="font-size: 1.2em;">
+          Malignant tumors are cancerous and aggressive because they invade and damage surrounding tissue. When a tumor is suspected to be malignant, the doctor will perform a biopsy to determine the severity or aggressiveness of the tumor.
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="well" style="margin: 40px; background-color: #ffffcc;text-align: center;">
+      Made in India with ❤️❤️❤️.
+    </div>
+
+  </div>  
+
+
+</div>
+
+</body>
+</html>
