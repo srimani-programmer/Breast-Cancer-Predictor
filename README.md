@@ -15,9 +15,7 @@ is patients undergoing painful, expensive surgeries that were not even necessary
 We take a dataset of the previous breast cancer patients and train the model to predict whether the cancer is **benign** or **malignant**. These predictions will help doctors to do surgeries only when the cancer is malignant, thus reducing the unnecessary surgeries for woman. 
 
 For building the project we have used Wisconsin Breast cancer data which has 569 rows of which 357 are benign and 212 are malignant. 
-The data is prepossessed and scaled. We have trained both ANN and SVM and SVM gives best accuracy of 98.2%. To provide the easy to
-use interface to doctors we have developed a website that will take the data and display the output with accuracy and time taken 
-to predict.
+The data is prepossessed and scaled. We have trained with Random forest Classifier gives best accuracy of 98.0%. To provide the easy to use interface to doctors we have developed a website that will take the data and display the output with accuracy and time taken to predict.
 
 
 ## Languages or Frameworks Used 
@@ -34,7 +32,7 @@ to predict.
   
   ### Clone
   ```
-    1. Clone the project into your local system.
+    Clone the project into your local system.
   ```
   
   After cloning, using the command prompt, go to the project directory and run `python app.py` to start the web server. Now you can go to link which was displayed in command prompt to access the web application. Firstly, make sure you have installed all necessary libraries or packages installed on your system.
