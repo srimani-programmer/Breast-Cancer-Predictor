@@ -53,7 +53,7 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
 #### Tumor Data form
   ![Home Page 3](static/images/homepage3.png)
 
-*****
+***
 
 #### Prediction Output
 
