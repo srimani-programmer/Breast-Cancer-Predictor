@@ -7,55 +7,39 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="container-fluid" style="background-color: #fff">
-  <div class="jumbotron" style="background-color: #ff8566">
-    <h1>Breast Cancer Prediction</h1>      
-    <p>Predicts whether the cancer is benign or malignant with an accuracy of more than<b>95%</b>.</p>
-  </div>
+{% include "footer.html" %}
 
   <div class="container">
     
-    <div class="row">
-      <div class="col-sm-6 " style="background-color:#ccddff;padding: 15px">
-        <h2 style="text-align: center;">Benign Tumors</h2>
-        <p style="font-size: 1.2em;">
-          Since benign tumors are harmless, doctors may opt to leave the lump alone rather than remove it. If you are experiencing discomfort, irritation or pressure, let your doctor know so that she can plan to remove it for you and improve your comfort. 
-        </p>
-      </div>
-      <div class="col-sm-6" style="background-color:#ffccee;padding: 15px">
-        <h2 style="text-align: center;">Malignant tumors</h2>
-        <p style="font-size: 1.2em;">
-          Malignant tumors are cancerous and aggressive because they invade and damage surrounding tissue. When a tumor is suspected to be malignant, the doctor will perform a biopsy to determine the severity or aggressiveness of the tumor.
-        </p>
-      </div>
-    </div>
+  {% include "tumor.html" %}
 
 
 
-    <div style="margin: 40px;padding: 20px;font-size: 1.3em;background-color: #99ff99">
+    <div style="margin: 40px;padding: 20px;font-size: 1.3em;background-color: #67E6DC">
 
-      <ul class="nav nav-tabs" style="background-color: #99ff99">
-        <li class="active"><a data-toggle="tab" href="#home" style="background-color: #99ff99">What is Breast Cancer</a></li>
-        <li><a data-toggle="tab" href="#menu1">Who gets Breast Cancer</a></li>
-        <li><a data-toggle="tab" href="#menu2">What Are the Symptoms of Breast Cancer</a></li>
+      <ul class="nav nav-tabs" style="background-color: #67E6DC">
+        <li class="active"><a data-toggle="tab" href="#home" style="font-family: 'Balsamiq Sans', cursive;">What is Breast Cancer</a></li>
+        <li><a data-toggle="tab" href="#menu1" style="font-family: 'Balsamiq Sans', cursive;">Who gets Breast Cancer</a></li>
+        <li><a data-toggle="tab" href="#menu2" style="font-family: 'Balsamiq Sans', cursive;">What Are the Symptoms of Breast Cancer</a></li>
       </ul>
 
       <div class="tab-content">
         <div id="home" class="tab-pane fade in active">
-          <h3>What is Breast Cancer</h3>
-          <p>Cancers are typically named after the part of the body from which they originate. Breast cancer originates in the breast tissue. Like other cancers, breast cancer can invade and grow into the tissue surrounding the breast. It can also travel to other parts of the body and form new tumors, a process called metastasis..</p>
+          <h3 style="font-family: 'Balsamiq Sans', cursive;">What is Breast Cancer</h3>
+          <p style="font-family: 'Balsamiq Sans', cursive;">Cancers are typically named after the part of the body from which they originate. Breast cancer originates in the breast tissue. Like other cancers, breast cancer can invade and grow into the tissue surrounding the breast. It can also travel to other parts of the body and form new tumors, a process called metastasis..</p>
         </div>
         <div id="menu1" class="tab-pane fade">
-          <h3>Who gets Breast Cancer</h3>
-          <p>Breast cancer ranks second as a cause of cancer death in women (after lung cancer). Today, about 1 in 8 women (12%) will develop breast cancer in her lifetime. The American Cancer Society estimated that in 2017, about 252,710 women will be diagnosed with invasive breast cancer and about 40,610 will die from the disease.</p>
+          <h3 style="font-family: 'Balsamiq Sans', cursive;">Who gets Breast Cancer</h3>
+          <p style="font-family: 'Balsamiq Sans', cursive;">Breast cancer ranks second as a cause of cancer death in women (after lung cancer). Today, about 1 in 8 women (12%) will develop breast cancer in her lifetime. The American Cancer Society estimated that in 2017, about 252,710 women will be diagnosed with invasive breast cancer and about 40,610 will die from the disease.</p>
         </div>
         <div id="menu2" class="tab-pane fade">
-          <h3>Some Symptoms of Breast Cancer include:-</h3>
+          <h3 style="font-family: 'Balsamiq Sans', cursive;">Some Symptoms of Breast Cancer include:</h3>
           <p>
-            <ul>
+            <ul style="font-family: 'Balsamiq Sans', cursive;">
               <li>A mass or lump, which may feel as small as a pea.</li>
               <li>A change in the size, shape, or contour of the breast.</li>
               <li>A blood-stained or clear fluid discharge from the nipple.</li>
@@ -68,78 +52,78 @@
     </div>
 
 
-    <div style="background-color:#b3ffb3;padding: 20px; margin: 40px">
+    <div style="background-color:#53E0BC; padding: 20px; margin: 40px">
 
       <form class="form-horizontal" action="/predict" method="post">
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value1">Radius Mean:</label>
+          <label class="control-label col-sm-2" for="value1" style="font-family: 'Balsamiq Sans', cursive;">Radius Mean</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value1" placeholder="Enter radius_mean" name="value1"  >
+            <input type="text" class="form-control" id="value1" placeholder="Enter radius_mean" name="value1"  required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value2">Texture Mean</label>
+          <label class="control-label col-sm-2" for="value2" style="font-family: 'Balsamiq Sans', cursive;">Texture Mean</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value2" placeholder="Enter texture_mean" name="value2"  >
+            <input type="text" class="form-control" id="value2" placeholder="Enter texture_mean" name="value2" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value3">Perimeter Mean:</label>
+          <label class="control-label col-sm-2" for="value3" style="font-family: 'Balsamiq Sans', cursive;">Perimeter Mean</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value3" placeholder="Enter perimeter_mean" name="value3"  >
+            <input type="text" class="form-control" id="value3" placeholder="Enter perimeter_mean" name="value3" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value4">Area Mean:</label>
+          <label class="control-label col-sm-2" for="value4" style="font-family: 'Balsamiq Sans', cursive;">Area Mean</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value4" placeholder="Enter area_mean" name="value4"  >
-          </div>
-        </div>
-
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value5">Smoothness Mean:</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value5" placeholder="Enter smoothness_mean" name="value5"  >
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value6">Compactness Mean:</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value6" placeholder="Enter compactness_mean" name="value6"  >
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value7">Concavity Mean:</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value7" placeholder="Enter concavity_mean" name="value7"  >
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value8">Concave Points Mean:</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value8" placeholder="Enter concave points_mean" name="value8"  >
+            <input type="text" class="form-control" id="value4" placeholder="Enter area_mean" name="value4" required>
           </div>
         </div>
 
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value9">Symmetry Mean:</label>
+          <label class="control-label col-sm-2" for="value5" style="font-family: 'Balsamiq Sans', cursive;">Smoothness Mean</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value9" placeholder="Enter symmetry_mean" name="value9"  >
+            <input type="text" class="form-control" id="value5" placeholder="Enter smoothness_mean" name="value5" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value10">Fractal Dimension Mean:</label>
+          <label class="control-label col-sm-2" for="value6" style="font-family: 'Balsamiq Sans', cursive;">Compactness Mean</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value10" placeholder="Enter fractal_dimension_mean" name="value10"  >
+            <input type="text" class="form-control" id="value6" placeholder="Enter compactness_mean" name="value6" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="value7" style="font-family: 'Balsamiq Sans', cursive;">Concavity Mean</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="value7" placeholder="Enter concavity_mean" name="value7" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="value8" style="font-family: 'Balsamiq Sans', cursive;">Concave Points Mean</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="value8" placeholder="Enter concave points_mean" name="value8" required>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="value9" style="font-family: 'Balsamiq Sans', cursive;">Symmetry Mean</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="value9" placeholder="Enter symmetry_mean" name="value9" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="value10" style="font-family: 'Balsamiq Sans', cursive;">Fractal Dimension Mean</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="value10" placeholder="Enter fractal_dimension_mean" name="value10" required>
           </div>
         </div>
 
@@ -147,168 +131,155 @@
 
         
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value11">Radius SE:</label>
+          <label class="control-label col-sm-2" for="value11" style="font-family: 'Balsamiq Sans', cursive;">Radius SE</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value11" placeholder="Enter radius_se" name="value11"  >
+            <input type="text" class="form-control" id="value11" placeholder="Enter radius_se" name="value11" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value12">Texture SE:</label>
+          <label class="control-label col-sm-2" for="value12" style="font-family: 'Balsamiq Sans', cursive;">Texture SE</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value12" placeholder="Enter texture_se" name="value12"  >
+            <input type="text" class="form-control" id="value12" placeholder="Enter texture_se" name="value12" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value13">Perimeter SE:</label>
+          <label class="control-label col-sm-2" for="value13" style="font-family: 'Balsamiq Sans', cursive;">Perimeter SE</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value13" placeholder="Enter perimeter_se" name="value13"  >
+            <input type="text" class="form-control" id="value13" placeholder="Enter perimeter_se" name="value13" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value14">Area SE:</label>
+          <label class="control-label col-sm-2" for="value14" style="font-family: 'Balsamiq Sans', cursive;">Area SE</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value14" placeholder="Enter area_se" name="value14"  >
+            <input type="text" class="form-control" id="value14" placeholder="Enter area_se" name="value14" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value15">Smoothness SE:</label>
+          <label class="control-label col-sm-2" for="value15" style="font-family: 'Balsamiq Sans', cursive;">Smoothness SE</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value15" placeholder="Enter smoothness_se" name="value15"  >
+            <input type="text" class="form-control" id="value15" placeholder="Enter smoothness_se" name="value15" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value16">Compactness SE:</label>
+          <label class="control-label col-sm-2" for="value16" style="font-family: 'Balsamiq Sans', cursive;">Compactness SE</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value16" placeholder="Enter compactness_se" name="value16"  >
+            <input type="text" class="form-control" id="value16" placeholder="Enter compactness_se" name="value16" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value17">Concavity SE:</label>
+          <label class="control-label col-sm-2" for="value17" style="font-family: 'Balsamiq Sans', cursive;">Concavity SE</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value17" placeholder="Enter concavity_se" name="value17"  >
+            <input type="text" class="form-control" id="value17" placeholder="Enter concavity_se" name="value17" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value18">Concave Points SE:</label>
+          <label class="control-label col-sm-2" for="value18" style="font-family: 'Balsamiq Sans', cursive;">Concave Points SE</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value18" placeholder="Enter concave points_se" name="value18"  >
+            <input type="text" class="form-control" id="value18" placeholder="Enter concave points_se" name="value18" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value19">Symmetry SE:</label>
+          <label class="control-label col-sm-2" for="value19" style="font-family: 'Balsamiq Sans', cursive;">Symmetry SE</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value19" placeholder="Enter symmetry_se" name="value19"  >
+            <input type="text" class="form-control" id="value19" placeholder="Enter symmetry_se" name="value19" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value20">Fractal Dimension SE:</label>
+          <label class="control-label col-sm-2" for="value20" style="font-family: 'Balsamiq Sans', cursive;">Fractal Dimension SE</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value20" placeholder="Enter fractal_dimension_se" name="value20"  >
+            <input type="text" class="form-control" id="value20" placeholder="Enter fractal_dimension_se" name="value20" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value21">Radius Worst:</label>
+          <label class="control-label col-sm-2" for="value21" style="font-family: 'Balsamiq Sans', cursive;">Radius Worst</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value21" placeholder="Enter radius_worst" name="value21"  >
+            <input type="text" class="form-control" id="value21" placeholder="Enter radius_worst" name="value21" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value22">Texture Worst:</label>
+          <label class="control-label col-sm-2" for="value22" style="font-family: 'Balsamiq Sans', cursive;">Texture Worst</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value22" placeholder="Enter texture_worst" name="value22"  >
+            <input type="text" class="form-control" id="value22" placeholder="Enter texture_worst" name="value22" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value23">Perimeter Worst:</label>
+          <label class="control-label col-sm-2" for="value23" style="font-family: 'Balsamiq Sans', cursive;">Perimeter Worst</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value23" placeholder="Enter perimeter_worst" name="value23"  >
+            <input type="text" class="form-control" id="value23" placeholder="Enter perimeter_worst" name="value23" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value24">Area Worst:</label>
+          <label class="control-label col-sm-2" for="value24" style="font-family: 'Balsamiq Sans', cursive;">Area Worst</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value24" placeholder="Enter area_worst" name="value24"  >
+            <input type="text" class="form-control" id="value24" placeholder="Enter area_worst" name="value24" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value25">Smoothness Worst:</label>
+          <label class="control-label col-sm-2" for="value25" style="font-family: 'Balsamiq Sans', cursive;">Smoothness Worst</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value25" placeholder="Enter smoothness_worst" name="value25"  >
+            <input type="text" class="form-control" id="value25" placeholder="Enter smoothness_worst" name="value25" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value26">Compactness Worst:</label>
+          <label class="control-label col-sm-2" for="value26" style="font-family: 'Balsamiq Sans', cursive;">Compactness Worst</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value26" placeholder="Enter compactness_worst" name="value26"  >
+            <input type="text" class="form-control" id="value26" placeholder="Enter compactness_worst" name="value26" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value27">Concavity Worst:</label>
+          <label class="control-label col-sm-2" for="value27" style="font-family: 'Balsamiq Sans', cursive;">Concavity Worst</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value27" placeholder="Enter concavity_worst" name="value27"  >
+            <input type="text" class="form-control" id="value27" placeholder="Enter concavity_worst" name="value27" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value28">Concave Points Worst:</label>
+          <label class="control-label col-sm-2" for="value28" style="font-family: 'Balsamiq Sans', cursive;">Concave Points Worst</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value28" placeholder="Enter concave points_worst" name="value28"  >
+            <input type="text" class="form-control" id="value28" placeholder="Enter concave points_worst" name="value28" required>
           </div>
         </div>
 
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value29">Symmetry Worst:</label>
+          <label class="control-label col-sm-2" for="value29" style="font-family: 'Balsamiq Sans', cursive;">Symmetry Worst</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value29" placeholder="Enter symmetry_worst" name="value29"  >
+            <input type="text" class="form-control" id="value29" placeholder="Enter symmetry_worst" name="value29" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label col-sm-2" for="value30">Fractal Dimension Worst:</label>
+          <label class="control-label col-sm-2" for="value30" style="font-family: 'Balsamiq Sans', cursive;">Fractal Dimension Worst</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="value30" placeholder="Enter fractal_dimension_worst" name="value30"  >
+            <input type="text" class="form-control" id="value30" placeholder="Enter fractal_dimension_worst" name="value30" required>
           </div>
-        </div>
-
-        <hr>
-        <p style="text-align: center;">OR</p>
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="space">Enter Space Saperated Values:</label>
-          <div class="col-sm-10">
-            <textarea class="form-control" rows="5" id="space" name="space">None</textarea>
-          </div>
-        </div>
-        
-
+        </div>        
         <div class="form-group">        
           <div class="col-sm-offset-2 col-sm-10">
-            <input type="submit" name="Submit Request">
+            <input class="btn btn-primary" type="submit" name="Submit Request">
           </div>
         </div>
       </form>
       
     </div>
 
-    <div class="well" style="margin: 40px; background-color: #ffffcc;text-align: center;">
-      Made in India with ❤️❤️❤️.
-    </div>
+    {% include "copyrights.html" %}
 
   </div>  
 
