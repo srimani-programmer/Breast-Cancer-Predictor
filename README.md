@@ -31,10 +31,10 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   * First Clone the repository.
   * Create the virtual environment for the project.
   * Install the required packages using requirements.txt inside the environemnt using pip.
-  * run the app.py as python <app.py>
-  * Web Application will be hosted at 127.0.0.1:5000
+  * run the app.py as `python <app.py>`
+  * Web Application will be hosted at  `127.0.0.1:5000`
   * Enter the URL in the browser Application will be hosted.
   * Enter the details of the tumor to detect the type of the cancer with more than 98% accuracy.
   
   
-  After cloning, using the command prompt, go to the project directory and run `python app.py` to start the web server. Now you can go to link which was displayed in command prompt to access the web application. Firstly, make sure you have installed all necessary libraries or packages installed on your system.
+ 
