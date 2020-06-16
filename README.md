@@ -4,7 +4,8 @@
 ## Table of contents
 * [About Project](#about-project)
 * [Languages or Frameworks Used](#languages-or-frameworks-used)
-* [Setup](#setup)
+* [Setup](#project-setup)
+* [Application UI](#Application-ui)
 
 ## About Project:
 
@@ -35,7 +36,9 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   * Web Application will be hosted at  `127.0.0.1:5000`
   * Enter the URL in the browser Application will be hosted.
   * Enter the details of the tumor to detect the type of the cancer with more than 95% accuracy.
-  
+
+#### Application UI
+
 *****
 <div align="center">
 <p>Home Page</p>
