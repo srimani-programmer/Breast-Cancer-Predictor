@@ -31,14 +31,14 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   * First Clone the repository.
   * Create the virtual environment for the project.
   * Install the required packages using requirements.txt inside the environemnt using pip.
-  * run the app.py as `python <app.py>`
+  * run the app.py as `python app.py`
   * Web Application will be hosted at  `127.0.0.1:5000`
   * Enter the URL in the browser Application will be hosted.
   * Enter the details of the tumor to detect the type of the cancer with more than 95% accuracy.
   
 <hr style="border:2px solid gray"> </hr>
 
-#### Home Page
+-> #### Home Page <-
 
  ![Home Page 1](static/images/homepage1.png)
 
