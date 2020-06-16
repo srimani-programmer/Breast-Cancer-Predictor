@@ -37,8 +37,10 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   * Enter the details of the tumor to detect the type of the cancer with more than 95% accuracy.
   
 *****
+<div align="center">
+<p>Home Page</p>
+</div>
 
-**-> Home Page <-**
 
  ![Home Page 1](static/images/homepage1.png)
 
