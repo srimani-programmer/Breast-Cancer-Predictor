@@ -36,25 +36,24 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   * Enter the URL in the browser Application will be hosted.
   * Enter the details of the tumor to detect the type of the cancer with more than 95% accuracy.
   
-<hr style="border:2px solid gray"> </hr>
+*****
 
 **-> Home Page <-**
 
  ![Home Page 1](static/images/homepage1.png)
 
-<hr style="border:2px solid gray"> </hr>
+***** 
 
  #### Tumor Data form
 
  ![Home Page 2](static/images/HomePage2.png)
 
-
-<hr style="border:2px solid gray"> </hr>
+*****
 
 #### Tumor Data form
   ![Home Page 3](static/images/homepage3.png)
 
-<hr style="border:2px solid gray"> </hr>
+*****
 
 #### Prediction Output
 
