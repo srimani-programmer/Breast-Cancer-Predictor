@@ -38,7 +38,7 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   
 <hr style="border:2px solid gray"> </hr>
 
--> #### Home Page <-
+**-> Home Page <-**
 
  ![Home Page 1](static/images/homepage1.png)
 
