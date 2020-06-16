@@ -18,9 +18,9 @@
     
 
     <div class="jumbotron">
-      <h1>Cancer is Predicted to be {{output}}</h1>      
-      <p>The Probability of {{output}} is {{accuracy}} %.</p>
-      <p>The time taken to predict is {{time}} s.</p>
+      <h1>Cancer is Predicted to be {{ output }}</h1>      
+      <p>The Probability of {{ output }} is {{ accuracy * 100 }} %.</p>
+      <p>The time taken to predict is {{ time }} s.</p>
     </div>
 
     {% include "tumor.html" %}

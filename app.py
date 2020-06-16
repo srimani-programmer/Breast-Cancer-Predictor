@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-
+from random_forest import accuracy
 from sklearn.metrics import accuracy_score
 from time import time
 
@@ -13,7 +13,7 @@ app = Flask(__name__)
 app.url_map.strict_slashes = False
 
 @app.route('/')
-def hello_method():
+def index():
 	return render_template('home.html')
 
 @app.route('/predict', methods=['POST']) 
@@ -42,20 +42,17 @@ def login_user():
 	acc_x = acc[0][0]
 	acc_y = acc[0][1]
 	if(acc_x>acc_y):
-		acc = acc_x
+		acc1 = acc_x
 	else:
-		acc=acc_y
-	return render_template('result.html', output=output, accuracy=round(acc*100,3), time=t)
+		acc1=acc_y
+	return render_template('result.html', output=output, accuracy=accuracy, time=t)
 
-@app.route('/profile')
-def display():
-	return render_template('profile.html')
 	
 
 if __name__=='__main__':
 	global clf 
 	clf = random_forest_train()
 	randorm_forest_test(clf)
-	print("Done")
+	#print("Done")
 	app.run(debug=True)
 
