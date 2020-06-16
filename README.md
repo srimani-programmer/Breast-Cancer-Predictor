@@ -38,16 +38,24 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   
 <hr style="border:2px solid gray"> </hr>
 
- ![Home Page](static/images/homepage1.png)
+#### Home Page
+
+ ![Home Page 1](static/images/homepage1.png)
 
 <hr style="border:2px solid gray"> </hr>
 
- ![Home Page](static/images/HomePage2.png)
+ #### Tumor Data form
+
+ ![Home Page 2](static/images/HomePage2.png)
+
 
 <hr style="border:2px solid gray"> </hr>
 
-  ![Home Page](static/images/homepage3.png)
+#### Tumor Data form
+  ![Home Page 3](static/images/homepage3.png)
 
 <hr style="border:2px solid gray"> </hr>
 
-![Home Page](static/images/predict.png)
+#### Prediction Output
+
+![Prediction Page](static/images/predict.png)
