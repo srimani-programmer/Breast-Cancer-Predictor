@@ -39,7 +39,9 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
 
 *****
 
-#### Application UI
+<div align="center">
+<h4>Application UI</h4>
+</div>
 
 <div align="center">
 <p>Home Page</p>
