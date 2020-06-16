@@ -20,31 +20,15 @@ def hello_method():
 def login_user():
 
 	data_points = list()
-	if(request.form['space']=='None'):
-		data = []
-		string = 'value'
-		for i in range(1,31):
-			data.append(float(request.form['value'+str(i)]))
+	data = []
+	string = 'value'
+	for i in range(1,31):
+		data.append(float(request.form['value'+str(i)]))
 
-		for i in range(30):
-			data_points.append(data[i])
+	for i in range(30):
+		data_points.append(data[i])
 		
-		print(data_points)
-
-	else:
-		string = request.form['space']
-		data = string.split()
-		print(data)
-		print("Type:", type(data))
-		print("Length:", len(data))
-		for i in range(30):
-			print(data[i])
-		data = [float(x.strip()) for x in data]
-
-		for i in range(30):
-			data_points.append(data[i])
-
-		print(data_points)
+	print(data_points)
 
 	data_np = np.asarray(data, dtype = float)
 	data_np = data_np.reshape(1,-1)
@@ -73,5 +57,5 @@ if __name__=='__main__':
 	clf = random_forest_train()
 	randorm_forest_test(clf)
 	print("Done")
-	app.run()
+	app.run(debug=True)
 
