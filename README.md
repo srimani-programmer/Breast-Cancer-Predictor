@@ -32,8 +32,14 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
 ## Project Setup
   
   * First Clone the repository.
-  * Create the virtual environment for the project.
+  * Create the virtual environment for the project. 
+  ```sh
+  $ conda create -n myenv python=3.6
+  ```
   * Install the required packages using requirements.txt inside the environemnt using pip.
+  ```sh
+  $ pip install -r requirements.txt
+  ```
   * run the app.py as `python app.py`
   * Web Application will be hosted at  `127.0.0.1:5000`
   * Enter the URL in the browser Application will be hosted.
@@ -210,3 +216,12 @@ Then add a title and description to your pull request that explains your preciou
 </div>
 
 ![Prediction Page](static/images/predict.png)
+
+
+
+## Awesome contributors :star_struck:
+<a href="https://github.com/srimani-programmer/Breast-Cancer-Predictor/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=srimani-programmer/Breast-Cancer-Predictor" />
+</a>
+
+Made with [contributors-img](https://contributors-img.web.app).
