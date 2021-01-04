@@ -1,6 +1,17 @@
 # Breast Cancer Prediction
 > Predicts whether the type of breast cancer is Malignant or Benign
 
+# Aim of the Project
+#### > To predict if a breast cancer is Malignant or Benign using Image Dataset as well as Numerical Data
+#### > Apply ML and DL Models to predict the severity of the Breast-Cancer
+#### > Create a Wonderful UI for this project using Front End Languages and Frameworks (Like Bootstrap)
+#### > Create the Backend using Flask Framework.
+#### > Deploy on Cloud and make this wonderful project available to public
+
+#### Note: Kindly do not push any changes to Main or Master Branch. A New Branch named "New-Branch" is already created and push all the changes to this branch
+
+:point_right: Repo Link : [https://github.com/srimani-programmer/Breast-Cancer-Predictor/](https://github.com/srimani-programmer/Breast-Cancer-Predictor/)
+
 ## Table of contents
 * [About Project](#about-project)
 * [Languages or Frameworks Used](#languages-or-frameworks-used)
@@ -30,12 +41,156 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
 ## Project Setup
   
   * First Clone the repository.
-  * Create the virtual environment for the project.
+  * Create the virtual environment for the project. 
+  ```sh
+  $ conda create -n myenv python=3.6
+  ```
   * Install the required packages using requirements.txt inside the environemnt using pip.
+  ```sh
+  $ pip install -r requirements.txt
+  ```
   * run the app.py as `python app.py`
   * Web Application will be hosted at  `127.0.0.1:5000`
   * Enter the URL in the browser Application will be hosted.
   * Enter the details of the tumor to detect the type of the cancer with more than 95% accuracy.
+
+## Steps to follow :scroll:
+
+### 0. Star The Repo :star2:
+
+Star the repo by pressing the topmost-right button to start your wonderful journey.
+
+
+### 1. Fork it :fork_and_knife:
+
+
+### 2. Clone it :busts_in_silhouette:
+
+`NOTE: commands are to be executed on Linux, Mac, and Windows`
+
+You need to clone (download) it to local machine using
+
+```sh
+$ git clone https://github.com/Your_Username/Breast-Cancer-Predictor.git
+```
+
+> This makes a local copy of the repository in your machine.
+
+Once you have cloned the `Breast-Cancer-Predictor' repository in Github, move to that folder first using change directory command on Linux, Mac, and Windows
+```sh
+# This will change directory to a folder Hacktoberfest_20
+$ cd Breast-Cancer-Predictor
+```
+
+Move to this folder for all other commands.
+
+### 3. Set it up :arrow_up:
+
+Run the following commands to see that *your local copy* has a reference to *your forked remote repository* in Github :octocat:
+
+```sh
+$ git remote -v
+origin  https://github.com/Your_Username/Breast-Cancer-Predictor.git (fetch)
+origin  https://github.com/Your_Username/Breast-Cancer-Predictor.git (push)
+```
+
+Now, let's add a reference to the original [Breast-Cancer-Predictor](https://github.com/srimani-programmer/Breast-Cancer-Predictor/) repository using
+
+```sh
+$ git remote add upstream https://github.com/srimani-programmer/Breast-Cancer-Predictor.git
+```
+
+> This adds a new remote named ***upstream***.
+
+See the changes using
+
+```sh
+$ git remote -v
+origin    https://github.com/Your_Username/Breast-Cancer-Predictor.git (fetch)
+origin    https://github.com/Your_Username/Breast-Cancer-Predictor.git (push)
+upstream  https://github.com/Remote_Username/Breast-Cancer-Predictor.git (fetch)
+upstream  https://github.com/Remote_Username/Breast-Cancer-Predictor.git (push)
+```
+`In your case, you will see`
+```sh
+$ git remote -V
+origin    https://github.com/Your_Username/Breast-Cancer-Predictor.git (fetch)
+origin    https://github.com/Your_Username/Breast-Cancer-Predictor.git (push)
+upstream  https://github.com/manan-bedi2908/Breast-Cancer-Predictor.git (fetch)
+upstream  https://github.com/manan-bedi2908/Breast-Cancer-Predictor.git (push)
+```
+
+### 4. Sync it :recycle:
+
+Always keep your local copy of the repository updated with the original repository.
+Before making any changes and/or in an appropriate interval, run the following commands *carefully* to update your local repository.
+
+```sh
+# Fetch all remote repositories and delete any deleted remote branches
+$ git fetch --all --prune
+
+# Switch to `main` branch
+$ git checkout main
+
+# Reset local `main` branch to match the `upstream` repository's `main` branch
+$ git reset --hard upstream/main
+
+# Push changes to your forked `Breast-Cancer-Predictor` repo
+$ git push -u origin main
+```
+
+### 5. Ready Steady Go... :turtle: :rabbit2:
+
+Once you have completed these steps, you are ready to start contributing to the project and creating [pull requests](https://github.com/srimani-programmer/Breast-Cancer-Predictor/pulls).
+
+### 6. Checkout to a new branch :bangbang:
+
+Whenever you are going to contribute. Please create a separate branch using command and keep your `main` branch clean (i.e. synced with remote branch).
+
+```sh
+# It will create a new branch with name Branch_Name and switch to branch Folder_Name
+$ git checkout -b New-Branch
+```
+
+Create a separate branch for contribution and try to use the same name of the branch as of folder.
+
+To switch to the desired branch
+
+```sh
+# To switch from one folder to other
+$ git checkout New-Branch
+```
+
+To add the changes to the branch. Use
+
+```sh
+# To add all files to branch Folder_Name
+$ git add .
+```
+
+Type in a message relevant for the code reviewer using
+
+```sh
+# This message get associated with all files you have changed
+$ git commit -m 'relevant message'
+```
+
+Now, Push your awesome work to your remote repository using
+
+```sh
+# To push your work to your remote repository
+$ git push -u origin New-Branch
+```
+
+
+(Kindly push all the changes to the New-Branch, not main branch)
+Finally, go to your repository in the browser and click on `compare and pull requests`.
+Then add a title and description to your pull request that explains your precious effort.
+
+
+
+
+
 
 *****
 
@@ -70,3 +225,12 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
 </div>
 
 ![Prediction Page](static/images/predict.png)
+
+
+
+## Awesome contributors :star_struck:
+<a href="https://github.com/srimani-programmer/Breast-Cancer-Predictor/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=srimani-programmer/Breast-Cancer-Predictor" />
+</a>
+
+Made with [contributors-img](https://contributors-img.web.app).
