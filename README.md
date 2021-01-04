@@ -134,7 +134,7 @@ Whenever you are going to contribute. Please create a separate branch using comm
 
 ```sh
 # It will create a new branch with name Branch_Name and switch to branch Folder_Name
-$ git checkout -b New_Branch
+$ git checkout -b New-Branch
 ```
 
 Create a separate branch for contribution and try to use the same name of the branch as of folder.
@@ -143,7 +143,7 @@ To switch to the desired branch
 
 ```sh
 # To switch from one folder to other
-$ git checkout New_Branch
+$ git checkout New-Branch
 ```
 
 To add the changes to the branch. Use
@@ -164,9 +164,11 @@ Now, Push your awesome work to your remote repository using
 
 ```sh
 # To push your work to your remote repository
-$ git push -u origin New_Branch
+$ git push -u origin New-Branch
 ```
 
+
+(Kindly push all the changes to the New-Branch, not main branch)
 Finally, go to your repository in the browser and click on `compare and pull requests`.
 Then add a title and description to your pull request that explains your precious effort.
 
