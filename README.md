@@ -15,7 +15,7 @@
 #### > Create the Backend using Flask Framework.
 #### > Deploy on Cloud and make this wonderful project available to public
 
-#### Note: Kindly do not push any changes to Main or Master Branch. A New Branch named "New-Branch" is already created and push all the changes to this branch
+#### Note: Kindly do not push any changes to Main or Master Branch. A New Branch named "New_Pipeline" is already created and push all the changes to this branch
 #### Don't forget to create an issue before making a PR
 :point_right: Repo Link : [https://github.com/srimani-programmer/Breast-Cancer-Predictor/](https://github.com/srimani-programmer/Breast-Cancer-Predictor/)
 
@@ -136,14 +136,14 @@ Before making any changes and/or in an appropriate interval, run the following c
 # Fetch all remote repositories and delete any deleted remote branches
 $ git fetch --all --prune
 
-# Switch to `main` branch
-$ git checkout main
+# Switch to `New_Pipeline` branch
+$ git checkout New_Pipeline
 
 # Reset local `main` branch to match the `upstream` repository's `main` branch
 $ git reset --hard upstream/main
 
 # Push changes to your forked `Breast-Cancer-Predictor` repo
-$ git push -u origin main
+$ git push -u origin New_Pipeline
 ```
 
 ### 5. Ready Steady Go... :turtle: :rabbit2:
@@ -156,7 +156,7 @@ Whenever you are going to contribute. Please create a separate branch using comm
 
 ```sh
 # It will create a new branch with name Branch_Name and switch to branch Folder_Name
-$ git checkout -b New-Branch
+$ git checkout -b New_Pipeline
 ```
 
 Create a separate branch for contribution and try to use the same name of the branch as of folder.
@@ -165,7 +165,7 @@ To switch to the desired branch
 
 ```sh
 # To switch from one folder to other
-$ git checkout New-Branch
+$ git checkout New_Pipeline
 ```
 
 To add the changes to the branch. Use
@@ -186,11 +186,11 @@ Now, Push your awesome work to your remote repository using
 
 ```sh
 # To push your work to your remote repository
-$ git push -u origin New-Branch
+$ git push -u origin New_Pipeline
 ```
 
 
-(Kindly push all the changes to the New-Branch, not main branch)
+(Kindly push all the changes to the "New_Pipeline", not main branch)
 Finally, go to your repository in the browser and click on `compare and pull requests`.
 Then add a title and description to your pull request that explains your precious effort.
 
