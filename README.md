@@ -1,7 +1,7 @@
 # Breast Cancer Prediction
 > Predicts whether the type of breast cancer is Malignant or Benign
 
-:point_right: Repo Link : [https://github.com/manan-bedi2908/Hacktoberfest_20](https://github.com/srimani-programmer/Breast-Cancer-Predictor/)
+:point_right: Repo Link : [https://github.com/srimani-programmer/Breast-Cancer-Predictor/](https://github.com/srimani-programmer/Breast-Cancer-Predictor/)
 
 ## Table of contents
 * [About Project](#about-project)
