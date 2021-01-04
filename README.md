@@ -16,7 +16,7 @@
 #### > Deploy on Cloud and make this wonderful project available to public
 
 #### Note: Kindly do not push any changes to Main or Master Branch. A New Branch named "New-Branch" is already created and push all the changes to this branch
-
+#### Don't forget to create an issue before making a PR
 :point_right: Repo Link : [https://github.com/srimani-programmer/Breast-Cancer-Predictor/](https://github.com/srimani-programmer/Breast-Cancer-Predictor/)
 
 ## Table of contents
