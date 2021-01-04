@@ -1,6 +1,13 @@
 # Breast Cancer Prediction
 > Predicts whether the type of breast cancer is Malignant or Benign
 
+![Issues](https://img.shields.io/github/issues/srimani-programmer/Breast-Cancer-Predictor)
+![Pull Requests](https://img.shields.io/github/issues-pr/srimani-programmer/Breast-Cancer-Predictor)
+![Forks](https://img.shields.io/github/forks/srimani-programmer/Breast-Cancer-Predictor)
+![Stars](https://img.shields.io/github/stars/srimani-programmer/Breast-Cancer-Predictor)
+[![License](https://img.shields.io/github/license/srimani-programmer/Breast-Cancer-Predictor)](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/LICENSE)
+
+
 # Aim of the Project
 #### > To predict if a breast cancer is Malignant or Benign using Image Dataset as well as Numerical Data
 #### > Apply ML and DL Models to predict the severity of the Breast-Cancer
