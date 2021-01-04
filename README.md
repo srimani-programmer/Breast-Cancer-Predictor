@@ -2,11 +2,11 @@
 > Predicts whether the type of breast cancer is Malignant or Benign
 
 # Aim of the Project
-> To predict if a breast cancer is Malignant or Benign using Image Dataset as well as Numerical Data
-> Apply ML and DL Models to predict the severity of the Breast-Cancer
-> Create a Wonderful UI for this project using Front End Languages and Frameworks (Like Bootstrap)
-> Create the Backend using Flask Framework.
-> Deploy on Cloud and make this wonderful project available to public
+### > To predict if a breast cancer is Malignant or Benign using Image Dataset as well as Numerical Data
+### > Apply ML and DL Models to predict the severity of the Breast-Cancer
+### > Create a Wonderful UI for this project using Front End Languages and Frameworks (Like Bootstrap)
+### > Create the Backend using Flask Framework.
+### > Deploy on Cloud and make this wonderful project available to public
 
 ### Note: Kindly do not push any changes to Main or Master Branch. A New Branch named "New-Branch" is already created and push all the changes to this branch
 
