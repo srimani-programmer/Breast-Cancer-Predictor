@@ -107,10 +107,8 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
 <img src="static/images/predict.png" width="1200" height="600">
 
 ## Awesome contributors :sunglasses:
-<div align="center">
-<a href="https://github.com/srimani-programmer/Breast-Cancer-Predictor/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=srimani-programmer/Breast-Cancer-Predictor" />
+<a href="https://github.com/M-PRERNA/Breast-Cancer-Predictor/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=M-PRERNA/Breast-Cancer-Predictor" />
 </a>
-<div>
  
 *Made with [contributors-img](https://contributors-img.web.app).*
