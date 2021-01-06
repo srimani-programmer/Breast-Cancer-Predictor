@@ -7,16 +7,16 @@
 ![Stars](https://img.shields.io/github/stars/srimani-programmer/Breast-Cancer-Predictor)
 [![License](https://img.shields.io/github/license/srimani-programmer/Breast-Cancer-Predictor)](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/LICENSE)
 
-## Please follow the [Code of Conduct](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/CODE_OF_CONDUCT.md)
+## :round_pushpin: Please follow the [Code of Conduct](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/CODE_OF_CONDUCT.md) for contributing in this repository
 # Aim of the Project
-#### - To predict if a breast cancer is Malignant or Benign using Image Dataset as well as Numerical Data
-#### - Apply ML and DL Models to predict the severity of the Breast-Cancer
-#### - Create a Wonderful UI for this project using Front End Languages and Frameworks (Like Bootstrap)
-#### - Create the Backend using Flask Framework.
-#### - Deploy on Cloud and make this wonderful project available to public
+#### :dart: To predict if a breast cancer is Malignant or Benign using Image Dataset as well as Numerical Data
+#### :dart: Apply ML and DL Models to predict the severity of the Breast-Cancer
+#### :dart: Create a Wonderful UI for this project using Front End Languages and Frameworks (Like Bootstrap)
+#### :dart: Create the Backend using Flask Framework.
+#### :dart: Deploy on Cloud and make this wonderful project available to public
 
 
-## Table of contents
+## :clipboard: Table of contents
 * [About Project](#about-project)
 * [Languages or Frameworks Used](#languages-or-frameworks-used)
 * [Setup](#project-setup)
@@ -42,6 +42,8 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   * Pandas: library for data manipulation and analysis
   * SkLearn: library which features various classification, regression and clustering algorithms
   * Flask: microframework for building web applications using Python.
+  
+  <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/python-icon.png" width=100 height=100> <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/numpy-icon.png" width=100 height=100> <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/pandas-icon.png" width=100 height=100> <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/sklearn-icon.png" width=100 height=100>  <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/flask-icon.png" width=100 height=100>
   
 ## Project Setup
   
