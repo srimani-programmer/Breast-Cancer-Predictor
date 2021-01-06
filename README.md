@@ -59,7 +59,7 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   * Enter the URL in the browser Application will be hosted.
   * Enter the details of the tumor to detect the type of the cancer with more than 95% accuracy.
 
-## How To Contriubute :scroll:
+## How To Contribute :scroll:
 
 ### 0. Star The Repo :star2:
 
