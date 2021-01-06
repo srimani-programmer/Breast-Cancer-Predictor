@@ -1,4 +1,6 @@
-# Breast Cancer Prediction
+
+<img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/Breast%20Cancer%20Prediction%20banner.png">
+
 > Predicts whether the type of breast cancer is Malignant or Benign
 
 ![Issues](https://img.shields.io/github/issues/srimani-programmer/Breast-Cancer-Predictor)
