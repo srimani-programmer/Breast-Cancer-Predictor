@@ -7,22 +7,20 @@
 ![Stars](https://img.shields.io/github/stars/srimani-programmer/Breast-Cancer-Predictor)
 [![License](https://img.shields.io/github/license/srimani-programmer/Breast-Cancer-Predictor)](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/LICENSE)
 
-## Please follow the Code of Conduct: [Code of Conduct](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/CODE_OF_CONDUCT.md)
+## Please follow the [Code of Conduct](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/CODE_OF_CONDUCT.md)
 # Aim of the Project
-#### > To predict if a breast cancer is Malignant or Benign using Image Dataset as well as Numerical Data
-#### > Apply ML and DL Models to predict the severity of the Breast-Cancer
-#### > Create a Wonderful UI for this project using Front End Languages and Frameworks (Like Bootstrap)
-#### > Create the Backend using Flask Framework.
-#### > Deploy on Cloud and make this wonderful project available to public
+#### - To predict if a breast cancer is Malignant or Benign using Image Dataset as well as Numerical Data
+#### - Apply ML and DL Models to predict the severity of the Breast-Cancer
+#### - Create a Wonderful UI for this project using Front End Languages and Frameworks (Like Bootstrap)
+#### - Create the Backend using Flask Framework.
+#### - Deploy on Cloud and make this wonderful project available to public
 
-#### Note: Kindly do not push any changes to Main or Master Branch. A New Branch named "New_Pipeline" is already created and push all the changes to this branch
-#### Don't forget to create an issue before making a PR
-:point_right: Repo Link : [https://github.com/srimani-programmer/Breast-Cancer-Predictor/](https://github.com/srimani-programmer/Breast-Cancer-Predictor/)
 
 ## Table of contents
 * [About Project](#about-project)
 * [Languages or Frameworks Used](#languages-or-frameworks-used)
 * [Setup](#project-setup)
+* [How To Contribute ?](#Steps-to-follow)
 * [Application UI](#Application-ui)
 
 ## About Project:
@@ -189,13 +187,11 @@ Now, Push your awesome work to your remote repository using
 $ git push -u origin New_Pipeline
 ```
 
-
-(Kindly push all the changes to the "New_Pipeline", not main branch)
+#### Note: Kindly do not push any changes to Main or Master Branch. A New Branch named "New_Pipeline" is already created and push all the changes to this branch.
+#### Don't forget to create an issue before making a PR
+:point_right: Repo Link : [https://github.com/srimani-programmer/Breast-Cancer-Predictor/](https://github.com/srimani-programmer/Breast-Cancer-Predictor/)
 Finally, go to your repository in the browser and click on `compare and pull requests`.
 Then add a title and description to your pull request that explains your precious effort.
-
-
-
 
 
 
