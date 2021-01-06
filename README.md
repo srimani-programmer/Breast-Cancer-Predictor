@@ -205,31 +205,27 @@ Then add a title and description to your pull request that explains your preciou
 <p>Home Page</p>
 </div>
 
-![Home Page 1](static/images/homepage1.png)
-
-***** 
+<img src="static/images/homepage1.png" width="1200" height="600">
 
 <div align="center">
 <p>Tumor Data form</p>
 </div>
 
-![Home Page 2](static/images/HomePage2.png)
+<div align=""center>
+<img src="static/images/HomePage2.png" width="1200" height="600">
+</div>
 
-*****
 <div align="center">
 <p>Tumor Data form</p>
 </div>
 
-![Home Page 3](static/images/homepage3.png)
+<img src="static/images/homepage3.png" width="1200" height="600">
 
-***
 <div align="center">
 <p>Prediction Output</p>
 </div>
 
-![Prediction Page](static/images/predict.png)
-
-
+<img src="static/images/predict.png" width="1200" height="600">
 
 ## Awesome contributors :star_struck:
 <a href="https://github.com/srimani-programmer/Breast-Cancer-Predictor/graphs/contributors">
