@@ -1,4 +1,4 @@
-## To Contribute-
+## To Contribute -
 
 ### 0. Star The Repo :star2:
 
