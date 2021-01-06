@@ -20,7 +20,7 @@
 * [About Project](#about-project)
 * [Languages or Frameworks Used](#languages-or-frameworks-used)
 * [Setup](#project-setup)
-* [How To Contribute ?](https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/CODE_OF_CONDUCT.md)
+* [How To Contribute ?](https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/Contribution-Guide.md)
 * [Application UI](#Application-ui)
 
 ## About Project:
