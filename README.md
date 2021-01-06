@@ -20,7 +20,7 @@
 * [About Project](#about-project)
 * [Languages or Frameworks Used](#languages-or-frameworks-used)
 * [Setup](#project-setup)
-* [How To Contribute ?](#Steps-to-follow)
+* [How To Contribute ?](#How-To-Contribute)
 * [Application UI](#Application-ui)
 
 ## About Project:
@@ -59,7 +59,7 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   * Enter the URL in the browser Application will be hosted.
   * Enter the details of the tumor to detect the type of the cancer with more than 95% accuracy.
 
-## Steps to follow :scroll:
+## How To Contriubute :scroll:
 
 ### 0. Star The Repo :star2:
 
