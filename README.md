@@ -1,7 +1,7 @@
 
 <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/Breast%20Cancer%20Prediction%20banner.png">
 
-> This app predicts whether the type of breast cancer is Malignant or Benign
+# Predicts whether the type of breast cancer is Malignant or Benign
 
 ![Issues](https://img.shields.io/github/issues/srimani-programmer/Breast-Cancer-Predictor)
 ![Pull Requests](https://img.shields.io/github/issues-pr/srimani-programmer/Breast-Cancer-Predictor)
@@ -9,13 +9,13 @@
 ![Stars](https://img.shields.io/github/stars/srimani-programmer/Breast-Cancer-Predictor)
 [![License](https://img.shields.io/github/license/srimani-programmer/Breast-Cancer-Predictor)](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/LICENSE)
 
-## :round_pushpin: Please follow the [Code of Conduct](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/CODE_OF_CONDUCT.md) for contributing in this repository
-# Aim of the Project
-#### :dart: To predict if a breast cancer is Malignant or Benign using Image Dataset as well as Numerical Data
-#### :dart: Apply ML and DL Models to predict the severity of the Breast-Cancer
-#### :dart: Create a Wonderful UI for this project using Front End Languages and Frameworks (Like Bootstrap)
-#### :dart: Create the Backend using Flask Framework.
-#### :dart: Deploy on Cloud and make this wonderful project available to public
+> ## :round_pushpin: Please follow the [Code of Conduct](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/CODE_OF_CONDUCT.md) for contributing in this repository
+# :dart: Aim of the Project
+####  -To predict if a breast cancer is Malignant or Benign using Image Dataset as well as Numerical Data
+####  -Apply ML and DL Models to predict the severity of the Breast-Cancer
+####  -Create a Wonderful UI for this project using Front End Languages and Frameworks (Like Bootstrap)
+####  -Create the Backend using Flask Framework.
+####  -Deploy on Cloud and make this wonderful project available to public
 
 
 ## :clipboard: Table of contents
@@ -56,11 +56,11 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   * First Clone the repository.
   * Create the virtual environment for the project. 
   
-  **FOR ANACONDA USERS**
+  :heavy_check_mark: **FOR ANACONDA USERS**
   ```sh
   $ conda create -n myenv python=3.6
   ```
-  **FOR VENV USERS**
+  :heavy_check_mark: **FOR VENV USERS**
   - Create a new directory (ex: project)
   - Move into *project* directory
   - type the following:
@@ -77,7 +77,7 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   * Enter the details of the tumor to detect the type of the cancer with more than 95% accuracy.
 
 <div align="center">
-<h1>Application UI</h1>
+<h1> :large_blue_circle: Application UI</h1>
 </div>
 
 <div align="center">
@@ -106,9 +106,11 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
 
 <img src="static/images/predict.png" width="1200" height="600">
 
-## Awesome contributors :star_struck:
+## Awesome contributors :sunglasses:
+<div align="center">
 <a href="https://github.com/srimani-programmer/Breast-Cancer-Predictor/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=srimani-programmer/Breast-Cancer-Predictor" />
 </a>
-
-Made with [contributors-img](https://contributors-img.web.app).
+<div>
+ 
+*Made with [contributors-img](https://contributors-img.web.app).*
