@@ -1,7 +1,7 @@
 
 <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/Breast%20Cancer%20Prediction%20banner.png">
 
-> Predicts whether the type of breast cancer is Malignant or Benign
+> This app predicts whether the type of breast cancer is Malignant or Benign
 
 ![Issues](https://img.shields.io/github/issues/srimani-programmer/Breast-Cancer-Predictor)
 ![Pull Requests](https://img.shields.io/github/issues-pr/srimani-programmer/Breast-Cancer-Predictor)
@@ -25,19 +25,23 @@
 * [How To Contribute ?](https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/Contribution-Guide.md)
 * [Application UI](#Application-ui)
 
-## About Project:
+## :large_blue_circle: About Project:
 
-Breast cancer is the most common type of cancer in women. When cancers are found early, they can often be cured. 
+Breast cancer is the **most common type of cancer in women**. When cancers are found early, they can often be cured. 
 There are some devices that detect the breast cancer but many times they lead to false positives, which results 
 is patients undergoing painful, expensive surgeries that were not even necessary. These type of cancers are called 
 **benign** which do not require surgeries and we can reduce these unnecessary surgeries by using Machine Learning. 
 I have taken the dataset of the previous breast cancer patients and train the model to predict whether the cancer is **benign** or **malignant**. These predictions will help doctors to do surgeries only when the cancer is malignant, thus reducing the unnecessary surgeries for woman. 
 
+
+
 For building the project I have used Wisconsin Breast cancer data which has 569 rows of which 357 are benign and 212 are malignant. 
 The data is prepossessed and scaled. I have trained with Random forest Classifier gives best accuracy of 95.0%. To provide the easy to use interface to doctors I have developed a website that will take the data and display the output with accuracy and time taken to predict.
 
+<img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/Description-image.png">
 
-## Languages or Frameworks Used 
+
+## :large_blue_circle: Languages & Frameworks Used 
 
   * Python: language
   * NumPy: library for numerical calculations
@@ -47,14 +51,23 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   
   <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/python-icon.png" width=100 height=100> <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/numpy-icon.png" width=100 height=100> <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/pandas-icon.png" width=100 height=100> <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/sklearn-icon.png" width=100 height=100>  <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/flask-icon.png" width=100 height=100>
   
-## Project Setup
-  
+## :large_blue_circle: Project Setup
+  To setup this project on your systems
   * First Clone the repository.
   * Create the virtual environment for the project. 
+  
+  **FOR ANACONDA USERS**
   ```sh
   $ conda create -n myenv python=3.6
   ```
-  * Install the required packages using requirements.txt inside the environemnt using pip.
+  **FOR VENV USERS**
+  - Create a new directory (ex: project)
+  - Move into *project* directory
+  - type the following:
+  ```sh
+  python -m venv my_virtualenv
+  ```
+  * After activating the virtual environment, install the required packages using requirements.txt inside the environemnt using pip.
   ```sh
   $ pip install -r requirements.txt
   ```
