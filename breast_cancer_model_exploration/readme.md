@@ -1,0 +1,2 @@
+### VARIOUS CLASSIFICATION MODEL COMPARISION AND CHOOSING THE BEST ONE.
+I have compared 5 classification models using grid search and displayed the results in a python notebook with visualistaion. After some parameter and kernel tuning support vector classifier turned out to be the best model for predicting with about 99 percent accuracy on test set. So SVC can be used to predict. I used rbf kernel in SVC.
