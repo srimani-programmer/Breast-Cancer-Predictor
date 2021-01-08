@@ -81,13 +81,13 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
 </div>
 
 <div align="center">
-<p>Home Page</p>
+<p> :house: Home Page<p>
 </div>
 
 <img src="static/images/homepage1.png" width="1200" height="600">
 
 <div align="center">
-<p>Tumor Data form</p>
+<p> :clipboard: Tumor Data form</p>
 </div>
 
 <div align=""center>
@@ -95,18 +95,18 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
 </div>
 
 <div align="center">
-<p>Tumor Data form</p>
+<p> :clipboard: Tumor Data form contnd.</p>
 </div>
 
 <img src="static/images/homepage3.png" width="1200" height="600">
 
 <div align="center">
-<p>Prediction Output</p>
+<p> :mag: Prediction Output</p>
 </div>
 
 <img src="static/images/predict.png" width="1200" height="600">
 
-## Awesome contributors :sunglasses:
+## :star2: Awesome contributors :star2:
 <a href="https://github.com/M-PRERNA/Breast-Cancer-Predictor/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=M-PRERNA/Breast-Cancer-Predictor" />
 </a>
