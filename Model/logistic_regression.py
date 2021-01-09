@@ -38,3 +38,4 @@ output = logreg.predict(X_test)
 accuracy = accuracy_score(y_test, output)
 print("The classification report of testing data: ",classification_report(y_test, predictions))
 print("The running time: ",time()-t)
+ 
