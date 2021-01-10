@@ -12,6 +12,9 @@ from keras.layers import Dense, Dropout
 from keras.models import Sequential
 from keras.layers import Dense
 from keras.models import load_model
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+
 def ann_model_preprocessing():
     #loading the dataset
     data = pd.read_csv('Breast Cancer Data.csv')
