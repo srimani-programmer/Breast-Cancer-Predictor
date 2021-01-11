@@ -6,7 +6,7 @@ body{
 }
 
 .formbox{
-  color:#666363;  
+  color:black;  
   font-size:20px;
  
 }
@@ -132,10 +132,7 @@ figure {
 }
 
 input[type="text"], textarea,input[type="text"]:focus {
-  border-width: 3px;
-  border-color:#aaaaaa;
-  box-shadow: none;
-  background-color: transparent;
+  
 }
 
 
