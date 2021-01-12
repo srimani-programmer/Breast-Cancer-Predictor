@@ -131,9 +131,15 @@ figure {
 
 }
 
-input[type="text"], textarea,input[type="text"]:focus {
-  
+.form-group input{
+  width:100%;
+  height:100%;
+  padding-top:10px;
+  border:none;
+  border-bottom: 5px solid #FFB0C2;
+
 }
+
 
 
 
