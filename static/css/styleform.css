@@ -85,6 +85,18 @@ div.active{
   #first{
   width: 50px;
   }
+  #ribbon{
+    width: 100px;
+    height:100px;
+  
+  }
+  #ribbon{
+    width:50%;
+    height:35%;
+    margin-top:100px;
+    margin-left:20px;
+  }
+
 }
 
 /*Small (sm) devices (landscape phones, 576px and up)*/
@@ -100,8 +112,17 @@ div.active{
     width: 50px
   
   }
+ 
+  #ribbon{
+    width:50%;
+    height:35%;
+    margin-top:100px;
+    margin-left:20px;
+  }
+
 
 }
+
 
 /*Medium (md) devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
@@ -115,17 +136,42 @@ div.active{
     width: 100px;
   
   }
+   
+  #ribbon{
+    width:50%;
+    height:50%;
+    margin-left:50px;
+
+  }
+
  
 }
+
 
 /*Large (lg) devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
   input[type="text"],input[type="text"]:focus,input[type="text"]:hover{
     width:400px;
   }
+   
+  #ribbon{
+    margin-top:250px;
+    width:50%;
+    height:40%;
+    margin-left:50px;
+
+  }
 }
 
 /*Extra (xl) large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
+     
+  #ribbon{
+    margin-top:100px;
+    width:70%;
+    height:70%;
+    margin-left:50px;
+
+  }
 
 }
