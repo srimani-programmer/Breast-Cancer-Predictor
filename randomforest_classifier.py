@@ -40,11 +40,16 @@ classifier.fit(X_train, Y_train)
 ##Predicting with the test dataset
 
 Y_pred = classifier.predict(X_test)
-print("Total observation :",Y_pred.shape[0] )
+print() 
+print("Total test observations :",Y_pred.shape[0] )
+
+print()
+
 #Confusion Matrix
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(Y_test, Y_pred)
 print(cm)
-
+print()
 ##Accuracy
 print("Accuracy :",(cm[0][0]+cm[1][1])/Y_pred.shape[0])
+print()
