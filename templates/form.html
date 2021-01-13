@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Breast Cancer Prediction</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="../static/css/styleform.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+
+<body style="background-color:white">
+	<div id="first" style="background-color: pink;height:100vh;width:30%">
+		<img id="ribbon"src="https://www.pinclipart.com/picdir/big/579-5794728_breast-cancer-ribbon-clip-art.png" style="padding-top:100px;"alt="">
+
+	</div>
+	
+	<form action="/predict" formnovalidate method="post">
+		
+		<div class="div1" >
+			<input type="text" class="form-control" id="value1" placeholder="Enter radius_mean" name="value1" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down "></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value2" placeholder="Enter texture_mean" name="value2" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value3" placeholder="Enter perimeter_mean" name="value3" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value4" placeholder="Enter area_mean" name="value4" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value5" placeholder="Enter smoothness_mean" name="value5" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value6" placeholder="Enter compactness_mean" name="value6" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value7" placeholder="Enter concavity_mean" name="value7" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value8" placeholder="Enter concave points_mean" name="value8" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value9" placeholder="Enter symmetry_mean" name="value9" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value10" placeholder="Enter fractal_dimension_mean" name="value10" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value11" placeholder="Enter radius_se" name="value11" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value12" placeholder="Enter texture_se" name="value12" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value13" placeholder="Enter perimeter_se" name="value13" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i id="last"  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value14" placeholder="Enter area_se" name="value14" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value15" placeholder="Enter smoothness_se" name="value15" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value16" placeholder="Enter compactness_se" name="value16" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value17" placeholder="Enter concavity_se" name="value17" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value18" placeholder="Enter concave points_se" name="value18" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value19" placeholder="Enter symmetry_se" name="value19" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value20" placeholder="Enter fractal_dimension_se" name="value20" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value21" placeholder="Enter radius_worst" name="value21" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value22" placeholder="Enter texture_worst" name="value22" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value23" placeholder="Enter perimeter_worst" name="value23" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value24" placeholder="Enter area_worst" name="value24" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value25" placeholder="Enter smoothness_worst" name="value25" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value26" placeholder="Enter compactness_worst" name="value26" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value27" placeholder="Enter concavity_worst" name="value27" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value28" placeholder="Enter concave points_worst" name="value28" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value29" placeholder="Enter symmetry_worst" name="value29" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			<input type="text" class="form-control" id="value30" placeholder="Enter fractal_dimension_worst" name="value30" autocomplete="off" required>
+			<i class="fas fa-arrow-circle-down fa-3x down"></i>
+		</div>
+		<div class="div1 inactive">
+			<i  class="fas fa-arrow-circle-up fa-3x up"></i>
+			
+				<input class="btn" style="height:70px;background-color:#FFB0C2;  color:black;font-size:16px" type="submit" name="Submit Request">
+
+		</div>
+	
+		
+
+	</form>
+
+</body>
+<script src="../static/js/script.js"></script>
+
+</html>
+
+
+
