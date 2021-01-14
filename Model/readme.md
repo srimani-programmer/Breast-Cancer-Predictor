@@ -4,4 +4,4 @@ I have compared 5 classification models using grid search . After some parameter
 Along with that i used Artificial neural network to train the model and it gave me about 99 percent accuracy on test set. The model was saved in .h5 format to be used for backend implementation. reference files: breast_cancer_nn.py
 
 ### VISUALIZATION FOR GRIDSEARCH
-![alt text](https://github.com/spursbyte/Breast-Cancer-Predictor/blob/New_Pipeline/breast_cancer_model_exploration/box_plot.png)
+![alt text](https://github.com/spursbyte/Breast-Cancer-Predictor/blob/New_Pipeline/Model/box_plot.png)
