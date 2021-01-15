@@ -79,7 +79,7 @@ def svc_model_predict(model_svc,X_test,y_test):
     predictions = model_svc.predict(X_test)
     print("Accuracy score %f" % accuracy_score(y_test, predictions))
     print(confusion_matrix(y_test, predictions))
-    return predictions
+    
 
 
 
