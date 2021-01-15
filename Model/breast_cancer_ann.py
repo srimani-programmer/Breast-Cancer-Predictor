@@ -60,8 +60,6 @@ def ann_model_acc(y_pred,y_test):
     accuracy = (cm[0][0] + cm[1][1]) / (cm[0][0] + cm[0][1] + cm[1][0] + cm[1][1])
     print("Accuracy: " + str(accuracy * 100) + "%")
 
-#saving the model in .h5 format
-def ann_model_save(classifier):
-    classifier.save('breast_cancer_model.h5')
+
 
 
