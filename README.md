@@ -54,7 +54,7 @@ The data set that I used is shown here.
 <h4>CORRELATION MAP</h4>
 </div>
 
-![CORRELATION MAP](static\images\breast_cancer,data_analysis_1.png)
+![CORRELATION MAP](https://github.com/tanya162/Breast-Cancer-Predictor/blob/New_Pipeline/static/images/breast_cancer%2Cdata_analysis_1.png)
  
  ***** 
 
