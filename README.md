@@ -44,7 +44,7 @@ The data set that I used is shown here.
 <h4>Data_Set</h4>
 </div>
 
-![Data_Set](static\images\img_dataset.png)
+![Data_Set](https://github.com/tanya162/Breast-Cancer-Predictor/blob/New_Pipeline/static/images/img_dataset.png)
  
  ***** 
 
@@ -65,7 +65,7 @@ I also figured out the most important features:
 <h4>Most Important Features</h4>
 </div>
 
-![Important Features](static\images\data_analysis_2.png)
+![Important Features](https://github.com/tanya162/Breast-Cancer-Predictor/blob/New_Pipeline/static/images/data_analysis_2.png)
 
 ***** 
 The conacve points that I found are as follows.
@@ -74,7 +74,7 @@ The conacve points that I found are as follows.
 <h4>Concave Points</h4>
 </div>
 
-![Concave Points](static\images\concave_points.png)
+![Concave Points](https://github.com/tanya162/Breast-Cancer-Predictor/blob/New_Pipeline/static/images/concave_points.png)
 
 *****
 
