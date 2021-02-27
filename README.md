@@ -83,7 +83,7 @@ These steps complete our data visualization part and we are ready to use the dat
 *****
 
 
- I have trained with Random forest Classifier gives best accuracy of 95.0%. To provide the easy to use interface to doctors I have developed a website that will take the data and display the output with accuracy and time taken to predict.
+ I have trained the model with Random forest Classifier algorithm that gives an accuracy of 95.0%. To provide the easy to use interface to doctors I have developed a website that will take the data and display the output with accuracy and time taken to predict the same.
 
 <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/Description-image.png">
 
