@@ -36,7 +36,54 @@ I have taken the dataset of the previous breast cancer patients and train the mo
 
 
 For building the project I have used Wisconsin Breast cancer data which has 569 rows of which 357 are benign and 212 are malignant. 
-The data is prepossessed and scaled. I have trained with Random forest Classifier gives best accuracy of 95.0%. To provide the easy to use interface to doctors I have developed a website that will take the data and display the output with accuracy and time taken to predict.
+The data is prepossessed and scaled.
+
+The data set that I used is shown here.
+
+<div align="center">
+<h4>Data_Set</h4>
+</div>
+
+![Data_Set](https://github.com/tanya162/Breast-Cancer-Predictor/blob/New_Pipeline/static/images/img_dataset.png)
+ 
+ ***** 
+
+ To find the correalaton map was the second step.
+
+<div align="center">
+<h4>CORRELATION MAP</h4>
+</div>
+
+![CORRELATION MAP](https://github.com/tanya162/Breast-Cancer-Predictor/blob/New_Pipeline/static/images/breast_cancer%2Cdata_analysis_1.png)
+ 
+ ***** 
+
+I also figured out the most important features:
+
+
+<div align="center">
+<h4>Most Important Features</h4>
+</div>
+
+![Important Features](https://github.com/tanya162/Breast-Cancer-Predictor/blob/New_Pipeline/static/images/data_analysis_2.png)
+
+***** 
+The conacve points that I found are as follows.
+
+<div align="center">
+<h4>Concave Points</h4>
+</div>
+
+![Concave Points](https://github.com/tanya162/Breast-Cancer-Predictor/blob/New_Pipeline/static/images/concave_points.png)
+
+*****
+
+These steps complete our data visualization part and we are ready to use the data for machine learning algorithms.
+***** 
+*****
+
+
+ I have trained the model with Random forest Classifier algorithm that gives an accuracy of 95.0%. To provide the easy to use interface to doctors I have developed a website that will take the data and display the output with accuracy and time taken to predict the same.
 
 <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/Description-image.png">
 
