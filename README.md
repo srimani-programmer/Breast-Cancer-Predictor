@@ -1,31 +1,36 @@
 # Breast Cancer Prediction
-> Predicts whether the type of breast cancer is Malignant or Benign
-
 ![Issues](https://img.shields.io/github/issues/srimani-programmer/Breast-Cancer-Predictor)
 ![Pull Requests](https://img.shields.io/github/issues-pr/srimani-programmer/Breast-Cancer-Predictor)
 ![Forks](https://img.shields.io/github/forks/srimani-programmer/Breast-Cancer-Predictor)
 ![Stars](https://img.shields.io/github/stars/srimani-programmer/Breast-Cancer-Predictor)
 [![License](https://img.shields.io/github/license/srimani-programmer/Breast-Cancer-Predictor)](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/LICENSE)
 
-## Please follow the Code of Conduct: [Code of Conduct](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/CODE_OF_CONDUCT.md)
-# Aim of the Project
-#### > To predict if a breast cancer is Malignant or Benign using Image Dataset as well as Numerical Data
-#### > Apply ML and DL Models to predict the severity of the Breast-Cancer
-#### > Create a Wonderful UI for this project using Front End Languages and Frameworks (Like Bootstrap)
-#### > Create the Backend using Flask Framework.
-#### > Deploy on Cloud and make this wonderful project available to public
+> Predicts whether the type of breast cancer is Malignant or Benign
 
-#### Note: Kindly do not push any changes to Main or Master Branch. A New Branch named "New_Pipeline" is already created and push all the changes to this branch
-#### Don't forget to create an issue before making a PR
-:point_right: Repo Link : [https://github.com/srimani-programmer/Breast-Cancer-Predictor/](https://github.com/srimani-programmer/Breast-Cancer-Predictor/)
+### For contributing to this project please follow the [Code of Conduct](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/CODE_OF_CONDUCT.md)
+## Aim of the Project
+- To predict if a breast cancer is **Malignant** or **Benign** using Image Dataset as well as Numerical Data.
+- Apply **Machine Learning** and **Deep Learning** Models to predict the severity of the Breast-Cancer.
+- Create a Wonderful UI for this project using Front End Languages and Frameworks (Like Bootstrap).
+- Create the Backend using Flask Framework.
+- Deploy on Cloud and make this wonderful project available to public.
+
+```
+Note: Kindly do not push any changes to Main or Master Branch. A New Branch named "New_Pipeline" is already 
+created and push all the changes to this branch. Don't forget to create an issue before making a PR.
+```
+:eyes: Repo Link : [https://github.com/srimani-programmer/Breast-Cancer-Predictor/](https://github.com/srimani-programmer/Breast-Cancer-Predictor/)
 
 ## Table of contents
-* [About Project](#about-project)
-* [Languages or Frameworks Used](#languages-or-frameworks-used)
-* [Setup](#project-setup)
-* [Application UI](#Application-ui)
 
-## About Project:
+| **Sl.no.**    | **Contents** |
+| :----:    | ----------- |
+| 01        | [About the Project](#about-project)       |
+| 02        | [Languages or Frameworks Used](#languages-or-frameworks-used)        |
+| 03        | [Setup](#project-setup)|
+| 04        | [Application UI](#application-ui) |
+
+## About Project
 
 Breast cancer is the most common type of cancer in women. When cancers are found early, they can often be cured. 
 There are some devices that detect the breast cancer but many times they lead to false positives, which results 
@@ -39,14 +44,13 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
 
 ## Languages or Frameworks Used 
 
-  * Python: language
-  * NumPy: library for numerical calculations
-  * Pandas: library for data manipulation and analysis
-  * SkLearn: library which features various classification, regression and clustering algorithms
-  * Flask: microframework for building web applications using Python.
+  * [Python](https://github.com/python) : language
+  * [NumPy](https://github.com/numpy): library for numerical calculations
+  * [Pandas](https://github.com/pandas-dev/pandas) : library for data manipulation and analysis
+  * [SkLearn](https://github.com/search?q=sklearn&type=repositories) : library which features various classification, regression and clustering algorithms
+  * [Flask](https://github.com/search?q=flask&type=repositories) : microframework for building web applications using Python.
   
-## Project Setup
-  
+## Project Setup 
   * First Clone the repository.
   * Create the virtual environment for the project. 
   ```sh
@@ -56,22 +60,22 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   ```sh
   $ pip install -r requirements.txt
   ```
-  * run the app.py as `python app.py`
+  * run the app.py as `python app.py` or `flask run`
   * Web Application will be hosted at  `127.0.0.1:5000`
   * Enter the URL in the browser Application will be hosted.
   * Enter the details of the tumor to detect the type of the cancer with more than 95% accuracy.
 
 ## Steps to follow :scroll:
 
-### 0. Star The Repo :star2:
+#### 0. Star The Repo :star2:
 
 Star the repo by pressing the topmost-right button to start your wonderful journey.
 
 
-### 1. Fork it :fork_and_knife:
+#### 1. Fork it :fork_and_knife:
 
 
-### 2. Clone it :busts_in_silhouette:
+#### 2. Clone it :busts_in_silhouette:
 
 `NOTE: commands are to be executed on Linux, Mac, and Windows`
 
@@ -91,7 +95,7 @@ $ cd Breast-Cancer-Predictor
 
 Move to this folder for all other commands.
 
-### 3. Set it up :arrow_up:
+#### 3. Set it up :arrow_up:
 
 Run the following commands to see that *your local copy* has a reference to *your forked remote repository* in Github :octocat:
 
@@ -127,7 +131,7 @@ upstream  https://github.com/manan-bedi2908/Breast-Cancer-Predictor.git (fetch)
 upstream  https://github.com/manan-bedi2908/Breast-Cancer-Predictor.git (push)
 ```
 
-### 4. Sync it :recycle:
+#### 4. Sync it :recycle:
 
 Always keep your local copy of the repository updated with the original repository.
 Before making any changes and/or in an appropriate interval, run the following commands *carefully* to update your local repository.
@@ -146,11 +150,11 @@ $ git reset --hard upstream/main
 $ git push -u origin New_Pipeline
 ```
 
-### 5. Ready Steady Go... :turtle: :rabbit2:
+#### 5. Ready Steady Go... :turtle: :rabbit2:
 
 Once you have completed these steps, you are ready to start contributing to the project and creating [pull requests](https://github.com/srimani-programmer/Breast-Cancer-Predictor/pulls).
 
-### 6. Checkout to a new branch :bangbang:
+#### 6. Checkout to a new branch :bangbang:
 
 Whenever you are going to contribute. Please create a separate branch using command and keep your `main` branch clean (i.e. synced with remote branch).
 
@@ -196,48 +200,12 @@ Then add a title and description to your pull request that explains your preciou
 
 
 
-
-
-
-*****
-
-<div align="center">
-<h4>Application UI</h4>
-</div>
-
-<div align="center">
-<p>Home Page</p>
-</div>
-
-![Home Page 1](static/images/homepage1.png)
-
-***** 
-
-<div align="center">
-<p>Tumor Data form</p>
-</div>
-
-![Home Page 2](static/images/HomePage2.png)
-
-*****
-<div align="center">
-<p>Tumor Data form</p>
-</div>
-
-![Home Page 3](static/images/homepage3.png)
-
-***
-<div align="center">
-<p>Prediction Output</p>
-</div>
-
-![Prediction Page](static/images/predict.png)
-
-
-
-## Awesome contributors :star_struck:
-<a href="https://github.com/srimani-programmer/Breast-Cancer-Predictor/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=srimani-programmer/Breast-Cancer-Predictor" />
+## Awesome contributors :star: :
+<a href="https://github.com/kulendu/breast-cancer-predictor/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kulendu/breast-cancer-predictor" />
 </a>
 
-Made with [contributors-img](https://contributors-img.web.app).
+Made with [contributors-img](https://contrib.rocks).
+
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
