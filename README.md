@@ -28,7 +28,7 @@ created and push all the changes to this branch. Don't forget to create an issue
 | 01        | [About the Project](#about-project)       |
 | 02        | [Languages or Frameworks Used](#languages-or-frameworks-used)        |
 | 03        | [Setup](#project-setup)|
-| 04        | [Application UI](#application-ui) |
+| 04        | [Application UI](https://github.com/kulendu/Breast-Cancer-Predictor/blob/master/application_ui.md) |
 
 ## About Project
 
