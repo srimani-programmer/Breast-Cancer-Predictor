@@ -12,9 +12,7 @@ X = dataset.iloc[:, 2:32].values
 y = dataset.iloc[:, 1].values
 
 # Encoding categorical data
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder
-labelencoder_X_1 = LabelEncoder()
-y = labelencoder_X_1.fit_transform(y)
+y = pd.get_dummies(y,dropfirst= true)
 
 # Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split
@@ -27,7 +25,6 @@ sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 from time import time
 
