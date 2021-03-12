@@ -10,6 +10,7 @@ def random_forest_train():
 
 	# Importing the dataset
 	dataset = pd.read_csv('Breast Cancer Data.csv')
+	dataset.drop("id",axis=1)
 	X = dataset.iloc[:, 2:32].values
 	y = dataset.iloc[:, 1].values
 
