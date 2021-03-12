@@ -1,0 +1,11 @@
+body{
+  color: #40514E;
+	margin: 0;
+	text-align: center;
+}
+
+#button:hover{
+  box-shadow: 0 .5px 10px 0 #40514E,
+              0 .5px 10px 0 #40514E;
+  text-shadow: 0 0 .5px #2F9EDB, 0 0 .5px #2F9EDB;
+}
