@@ -97,34 +97,13 @@ body::-webkit-scrollbar-thumb:hover {
     justify-content: space-between;
     align-items: center;
   }
-  .toggle {
-    order: 1;
-  }
-  .item.button {
-    order: 2;
-  }
-  .item {
-    width: 100%;
-    text-align: center;
-    order: 3;
-    display: none;
-  }
-  .item.active {
-    display: block;
-  }
+
   
   /* Navbar Toggle */
   .toggle {
     cursor:pointer;
   }
-  
-  .burger div {
-    width: 30px;
-    height: 3px;
-    background-color: #3c475f;
-    margin: 5px;
-    transition: all .3s ease;
-}
+
 .btn{
     margin: 15px 0px;
     padding: 10px 15px; 
@@ -136,39 +115,7 @@ body::-webkit-scrollbar-thumb:hover {
     border:2px solid #eee; 
 }
 
-.card{
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
-    display: grid;
-    font-family: 'Poppins', sans-serif;
-     margin: 0 auto;
-}
-.card *{
-    font-family: 'Poppins', sans-serif;
-}
-.card-title{
-    color: #eee;
-}
-.card p{
-    font-size:.8em;
-}
-.card a{
-    color: #eee;
-}
-.card a:hover{
-    color: #222835;
-    background-color: white;
-}
-.card-image{
-    width: 100px;
-    object-fit: cover;
-    filter: drop-shadow(1px 1px 2px #ffffff);
-}
-.five-column{
-    background-color: #222835;
-    display: grid;
-    grid-template-columns: 70% 30%;
-}
+
 .my-20{
     margin: 20px 0px;
 }
@@ -205,12 +152,8 @@ main{
     width: 100%;
     height: 85vh;
     
-    background: rgb(255,255,61);
-    background: linear-gradient(95deg, rgba(255,255,61,1) 7%, rgba(255,253,97,1) 45%, rgba(255,250,135,1) 100%); 
-   /*
-   background: rgb(255,250,135);
-background: linear-gradient(95deg, rgba(255,250,135,1) 8%, rgba(236,233,193,1) 45%, rgba(248,250,229,1) 100%);
-*/
+    background-color:#ccddff;
+  
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -231,6 +174,9 @@ background: linear-gradient(95deg, rgba(255,250,135,1) 8%, rgba(236,233,193,1) 4
 .contain {object-fit: contain;}
 .flex-row{
     display: flex;
+}
+.align-header{
+  
 }
 .centered{
     display: flex;

@@ -27,22 +27,20 @@
     </ul>
   </nav>
   <main>
-    <div class="rounded-20" style="display: flex;" id="bg">
+    <div class="rounded-20" style="background-color:#ccddff;display: flex; padding-bottom:20px">
       <div class="centered title-div">
-        <h1>The Name of Rose</h1>
-        <h2 class="sub">give me a flower, gain a flower</h2>
+        <h1>Breast Cancer Prediction</h1>
+        <h2 class="sub">Predicts whether the cancer is benign or malignant with an accuracy of more than <b>95%</b>.
+        </h2>
       </div>
-      <div class="centered flower-div"><img id="img-rose" src="https://i.hizliresim.com/3SAEU1.png"
+      <div class="centered flower-div"><img id="img-rose"
+          src="{{url_for('static', filename='images/Breast_cancer_Prediction_logo_transparent.png')}}"
           class="flower contain"></div>
     </div>
 
 
 
-
-
-    {% include "footer.html" %}
-
-    <div class="container">
+    <div class="container" style="margin-top:30px ;">
 
       {% include "tumor.html" %}
 
