@@ -38,3 +38,8 @@ output = clf.predict(X_test)
 accuracy = accuracy_score(y_test, output) 
 print("The accuracy of testing data: ",accuracy)
 print("The running time: ",time()-t)
+
+#save model
+# save the model to disk
+filename = 'rf_model.sav'
+pickle.dump(clf, open(filename, 'wb'))
