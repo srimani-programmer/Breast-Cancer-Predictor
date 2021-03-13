@@ -3,6 +3,7 @@
 # Importing the libraries
 import numpy as np
 import pandas as pd
+import pickle
 
 # Importing the dataset
 dataset = pd.read_csv('Breast Cancer Data.csv')
@@ -39,3 +40,7 @@ accuracy = accuracy_score(y_test, output)
 print("The classification report of testing data: ",classification_report(y_test, predictions))
 print("The running time: ",time()-t)
  
+ # save model
+ # save the model to disk
+filename = 'logistic_model.sav'
+pickle.dump(logreg, open(filename, 'wb'))
