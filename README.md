@@ -1,5 +1,7 @@
-# Breast Cancer Prediction
-> Predicts whether the type of breast cancer is Malignant or Benign
+
+<img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/Breast%20Cancer%20Prediction%20banner.png">
+
+# Predicts whether the type of breast cancer is Malignant or Benign
 
 ![Issues](https://img.shields.io/github/issues/srimani-programmer/Breast-Cancer-Predictor)
 ![Pull Requests](https://img.shields.io/github/issues-pr/srimani-programmer/Breast-Cancer-Predictor)
@@ -7,31 +9,30 @@
 ![Stars](https://img.shields.io/github/stars/srimani-programmer/Breast-Cancer-Predictor)
 [![License](https://img.shields.io/github/license/srimani-programmer/Breast-Cancer-Predictor)](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/LICENSE)
 
-## Please follow the Code of Conduct: [Code of Conduct](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/CODE_OF_CONDUCT.md)
-# Aim of the Project
-#### > To predict if a breast cancer is Malignant or Benign using Image Dataset as well as Numerical Data
-#### > Apply ML and DL Models to predict the severity of the Breast-Cancer
-#### > Create a Wonderful UI for this project using Front End Languages and Frameworks (Like Bootstrap)
-#### > Create the Backend using Flask Framework.
-#### > Deploy on Cloud and make this wonderful project available to public
+> ## :round_pushpin: Please follow the [Code of Conduct](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/CODE_OF_CONDUCT.md) for contributing in this repository
+# :dart: Aim of the Project
+####  -To predict if a breast cancer is Malignant or Benign using Image Dataset as well as Numerical Data
+####  -Apply ML and DL Models to predict the severity of the Breast-Cancer
+####  -Create a Wonderful UI for this project using Front End Languages and Frameworks (Like Bootstrap)
+####  -Create the Backend using Flask Framework.
+####  -Deploy on Cloud and make this wonderful project available to public
 
-#### Note: Kindly do not push any changes to Main or Master Branch. A New Branch named "New_Pipeline" is already created and push all the changes to this branch
-#### Don't forget to create an issue before making a PR
-:point_right: Repo Link : [https://github.com/srimani-programmer/Breast-Cancer-Predictor/](https://github.com/srimani-programmer/Breast-Cancer-Predictor/)
 
-## Table of contents
+## :clipboard: Table of contents
 * [About Project](#about-project)
 * [Languages or Frameworks Used](#languages-or-frameworks-used)
 * [Setup](#project-setup)
+* [How To Contribute ?](https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/Contribution-Guide.md)
 * [Application UI](#Application-ui)
 
-## About Project:
+## :large_blue_circle: About Project:
 
-Breast cancer is the most common type of cancer in women. When cancers are found early, they can often be cured. 
+Breast cancer is the **most common type of cancer in women**. When cancers are found early, they can often be cured. 
 There are some devices that detect the breast cancer but many times they lead to false positives, which results 
 is patients undergoing painful, expensive surgeries that were not even necessary. These type of cancers are called 
 **benign** which do not require surgeries and we can reduce these unnecessary surgeries by using Machine Learning. 
 I have taken the dataset of the previous breast cancer patients and train the model to predict whether the cancer is **benign** or **malignant**. These predictions will help doctors to do surgeries only when the cancer is malignant, thus reducing the unnecessary surgeries for woman. 
+
 
 For building the project I have used Wisconsin Breast cancer data which has 569 rows of which 357 are benign and 212 are malignant. 
 The data is prepossessed and scaled. I have trained with Random forest Classifier gives best accuracy of 95.0%. To provide the easy to use interface to doctors I have developed a website that will take the data and display the output with accuracy and time taken to predict.
@@ -39,7 +40,6 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
 
 ## Languages or Frameworks Used 
 
-<img alt="Python" src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/> <img alt="NumPy" src="https://img.shields.io/badge/numpy%20-%23013243.svg?&style=for-the-badge&logo=numpy&logoColor=white" /> <img alt="Pandas" src="https://img.shields.io/badge/pandas%20-%23150458.svg?&style=for-the-badge&logo=pandas&logoColor=white" /> <img alt="Sklearn" src="https://img.shields.io/badge/Sklearn%20-%23EE4C2C.svg?&style=for-the-badge&logo=Sklearn&logoColor=white" /> <img alt="Flask" src="https://img.shields.io/badge/flask%20-%23000.svg?&style=for-the-badge&logo=flask&logoColor=white"/>
 
   * Python: language
   * NumPy: library for numerical calculations
@@ -131,115 +131,129 @@ upstream  https://github.com/manan-bedi2908/Breast-Cancer-Predictor.git (push)
 
 ### 4. Sync it :recycle:
 
-Always keep your local copy of the repository updated with the original repository.
-Before making any changes and/or in an appropriate interval, run the following commands *carefully* to update your local repository.
-
-```sh
-# Fetch all remote repositories and delete any deleted remote branches
-$ git fetch --all --prune
-
-# Switch to `New_Pipeline` branch
-$ git checkout New_Pipeline
-
-# Reset local `main` branch to match the `upstream` repository's `main` branch
-$ git reset --hard upstream/main
-
-# Push changes to your forked `Breast-Cancer-Predictor` repo
-$ git push -u origin New_Pipeline
-```
-
-### 5. Ready Steady Go... :turtle: :rabbit2:
-
-Once you have completed these steps, you are ready to start contributing to the project and creating [pull requests](https://github.com/srimani-programmer/Breast-Cancer-Predictor/pulls).
-
-### 6. Checkout to a new branch :bangbang:
-
-Whenever you are going to contribute. Please create a separate branch using command and keep your `main` branch clean (i.e. synced with remote branch).
-
-```sh
-# It will create a new branch with name Branch_Name and switch to branch Folder_Name
-$ git checkout -b New_Pipeline
-```
-
-Create a separate branch for contribution and try to use the same name of the branch as of folder.
-
-To switch to the desired branch
-
-```sh
-# To switch from one folder to other
-$ git checkout New_Pipeline
-```
-
-To add the changes to the branch. Use
-
-```sh
-# To add all files to branch Folder_Name
-$ git add .
-```
-
-Type in a message relevant for the code reviewer using
-
-```sh
-# This message get associated with all files you have changed
-$ git commit -m 'relevant message'
-```
-
-Now, Push your awesome work to your remote repository using
-
-```sh
-# To push your work to your remote repository
-$ git push -u origin New_Pipeline
-```
 
 
-(Kindly push all the changes to the "New_Pipeline", not main branch)
-Finally, go to your repository in the browser and click on `compare and pull requests`.
-Then add a title and description to your pull request that explains your precious effort.
+For building the project I have used Wisconsin Breast cancer data which has 569 rows of which 357 are benign and 212 are malignant. 
+The data is prepossessed and scaled.
 
-
-
-
-
-
-*****
+The data set that I used is shown here.
 
 <div align="center">
-<h4>Application UI</h4>
+<h4>Data_Set</h4>
 </div>
+
+![Data_Set](https://github.com/tanya162/Breast-Cancer-Predictor/blob/New_Pipeline/static/images/img_dataset.png)
+ 
+ ***** 
+
+ To find the correalaton map was the second step.
 
 <div align="center">
-<p>Home Page</p>
+<h4>CORRELATION MAP</h4>
 </div>
 
-![Home Page 1](static/images/homepage1.png)
+![CORRELATION MAP](https://github.com/tanya162/Breast-Cancer-Predictor/blob/New_Pipeline/static/images/breast_cancer%2Cdata_analysis_1.png)
+ 
+ ***** 
+
+I also figured out the most important features:
+
+
+<div align="center">
+<h4>Most Important Features</h4>
+</div>
+
+![Important Features](https://github.com/tanya162/Breast-Cancer-Predictor/blob/New_Pipeline/static/images/data_analysis_2.png)
 
 ***** 
+The conacve points that I found are as follows.
 
 <div align="center">
-<p>Tumor Data form</p>
+<h4>Concave Points</h4>
 </div>
 
-![Home Page 2](static/images/HomePage2.png)
+![Concave Points](https://github.com/tanya162/Breast-Cancer-Predictor/blob/New_Pipeline/static/images/concave_points.png)
 
 *****
+
+These steps complete our data visualization part and we are ready to use the data for machine learning algorithms.
+***** 
+*****
+
+
+ I have trained the model with Random forest Classifier algorithm that gives an accuracy of 95.0%. To provide the easy to use interface to doctors I have developed a website that will take the data and display the output with accuracy and time taken to predict the same.
+
+<img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/Description-image.png">
+
+
+## :large_blue_circle: Languages & Frameworks Used 
+
+  * Python: language
+  * NumPy: library for numerical calculations
+  * Pandas: library for data manipulation and analysis
+  * SkLearn: library which features various classification, regression and clustering algorithms
+  * Flask: microframework for building web applications using Python.
+  
+  <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/python-icon.png" width=100 height=100> <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/numpy-icon.png" width=100 height=100> <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/pandas-icon.png" width=100 height=100> <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/sklearn-icon.png" width=100 height=100>  <img src="https://github.com/M-PRERNA/Breast-Cancer-Predictor/blob/master/static/images/flask-icon.png" width=100 height=100>
+  
+## :large_blue_circle: Project Setup
+  To setup this project on your systems
+  * First Clone the repository.
+  * Create the virtual environment for the project. 
+  
+  :heavy_check_mark: **FOR ANACONDA USERS**
+  ```sh
+  $ conda create -n myenv python=3.6
+  ```
+  :heavy_check_mark: **FOR VENV USERS**
+  - Create a new directory (ex: project)
+  - Move into *project* directory
+  - type the following:
+  ```sh
+  python -m venv my_virtualenv
+  ```
+  * After activating the virtual environment, install the required packages using requirements.txt inside the environemnt using pip.
+  ```sh
+  $ pip install -r requirements.txt
+  ```
+  * run the app.py as `python app.py`
+  * Web Application will be hosted at  `127.0.0.1:5000`
+  * Enter the URL in the browser Application will be hosted.
+  * Enter the details of the tumor to detect the type of the cancer with more than 95% accuracy.
+
 <div align="center">
-<p>Tumor Data form</p>
+<h1> :large_blue_circle: Application UI</h1>
 </div>
 
-![Home Page 3](static/images/homepage3.png)
-
-***
 <div align="center">
-<p>Prediction Output</p>
+<p> :house: Home Page<p>
 </div>
 
-![Prediction Page](static/images/predict.png)
+<img src="static/images/homepage1.png" width="1200" height="600">
 
+<div align="center">
+<p> :clipboard: Tumor Data form</p>
+</div>
 
+<div align=""center>
+<img src="static/images/HomePage2.png" width="1200" height="600">
+</div>
 
-## Awesome contributors :star_struck:
-<a href="https://github.com/srimani-programmer/Breast-Cancer-Predictor/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=srimani-programmer/Breast-Cancer-Predictor" />
+<div align="center">
+<p> :clipboard: Tumor Data form contnd.</p>
+</div>
+
+<img src="static/images/homepage3.png" width="1200" height="600">
+
+<div align="center">
+<p> :mag: Prediction Output</p>
+</div>
+
+<img src="static/images/predict.png" width="1200" height="600">
+
+## :star2: Awesome contributors :star2:
+<a href="https://github.com/M-PRERNA/Breast-Cancer-Predictor/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=M-PRERNA/Breast-Cancer-Predictor" />
 </a>
-
-Made with [contributors-img](https://contributors-img.web.app).
+ 
+*Made with [contributors-img](https://contributors-img.web.app).*

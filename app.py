@@ -16,6 +16,14 @@ app.url_map.strict_slashes = False
 def index():
 	return render_template('home.html')
 
+@app.route('/redirect', methods=['POST']) 
+def redirectionform():
+	return render_template('form.html')
+
+@app.route('/backtohome', methods=['POST']) 
+def a():
+	return render_template('home.html')
+
 @app.route('/predict', methods=['POST']) 
 def login_user():
 
@@ -55,4 +63,3 @@ if __name__=='__main__':
 	randorm_forest_test(clf)
 	#print("Done")
 	app.run(debug=True)
-
