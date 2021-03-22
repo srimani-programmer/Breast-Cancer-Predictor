@@ -13,9 +13,9 @@
 #### > Apply ML and DL Models to predict the severity of the Breast-Cancer
 #### > Create a Wonderful UI for this project using Front End Languages and Frameworks (Like Bootstrap)
 #### > Create the Backend using Flask Framework.
-#### > Deploy on Cloud and make this wonderful project available to public
+#### > Deploy on Cloud and make this wonderful project available to the public
 
-#### Note: Kindly do not push any changes to Main or Master Branch. A New Branch named "New_Pipeline" is already created and push all the changes to this branch
+#### Note: Kindly do not push any changes to Main or Master Branch. A New Branch named "New_Pipeline" is already created and push all the changes to that branch
 #### Don't forget to create an issue before making a PR
 :point_right: Repo Link : [https://github.com/srimani-programmer/Breast-Cancer-Predictor/](https://github.com/srimani-programmer/Breast-Cancer-Predictor/)
 
@@ -27,14 +27,14 @@
 
 ## About Project:
 
-Breast cancer is the most common type of cancer in women. When cancers are found early, they can often be cured. 
+Breast cancer is the most common type of cancer in women. Although there is no cure for cancer yet, detecting and treating the disease at an early stage can significantly improve a person's outlook. 
 There are some devices that detect the breast cancer but many times they lead to false positives, which results 
-is patients undergoing painful, expensive surgeries that were not even necessary. These type of cancers are called 
-**benign** which do not require surgeries and we can reduce these unnecessary surgeries by using Machine Learning. 
-I have taken the dataset of the previous breast cancer patients and train the model to predict whether the cancer is **benign** or **malignant**. These predictions will help doctors to do surgeries only when the cancer is malignant, thus reducing the unnecessary surgeries for woman. 
+is patients undergoing painful, expensive surgeries that were not necessary at all. These types of cancer are called 
+**benign** which do not require surgeries can be reduced via "early detection" and "watchful waiting".
+We have created a dataset from several breast cancer patients and trained our model to predict whether the cancer is **benign** or **malignant**. These predictions will help doctors to do surgeries only when the cancer is malignant, thus reducing the unnecessary surgeries for the patients. 
 
-For building the project I have used Wisconsin Breast cancer data which has 569 rows of which 357 are benign and 212 are malignant. 
-The data is prepossessed and scaled. I have trained with Random forest Classifier gives best accuracy of 95.0%. To provide the easy to use interface to doctors I have developed a website that will take the data and display the output with accuracy and time taken to predict.
+This project amkes use of "Wisconsin Breast Cancer" data which has 569 rows of which 357 are benign and 212 are malignant. 
+The data is preprocessed and scaled. I have trained the model with "Random Forest Classifier" resulting in wonderful accuracy of 95.0%. To provide an easy to use interface to doctors we are developing a website that will take the data and display the output and the time taken in prediction.
 
 
 ## Languages or Frameworks Used 
@@ -52,13 +52,13 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   ```sh
   $ conda create -n myenv python=3.6
   ```
-  * Install the required packages using requirements.txt inside the environemnt using pip.
+  * Install the required packages using requirements.txt inside the environment using pip.
   ```sh
   $ pip install -r requirements.txt
   ```
   * run the app.py as `python app.py`
   * Web Application will be hosted at  `127.0.0.1:5000`
-  * Enter the URL in the browser Application will be hosted.
+  * Enter the above URL in the browser.
   * Enter the details of the tumor to detect the type of the cancer with more than 95% accuracy.
 
 ## Steps to follow :scroll:
@@ -81,7 +81,7 @@ You need to clone (download) it to local machine using
 $ git clone https://github.com/Your_Username/Breast-Cancer-Predictor.git
 ```
 
-> This makes a local copy of the repository in your machine.
+> This creates a local copy of the repository in your machine.
 
 Once you have cloned the `Breast-Cancer-Predictor' repository in Github, move to that folder first using change directory command on Linux, Mac, and Windows
 ```sh
@@ -148,11 +148,11 @@ $ git push -u origin New_Pipeline
 
 ### 5. Ready Steady Go... :turtle: :rabbit2:
 
-Once you have completed these steps, you are ready to start contributing to the project and creating [pull requests](https://github.com/srimani-programmer/Breast-Cancer-Predictor/pulls).
+Once you have completed the above steps, you are ready to start contributing to the project and creating [pull requests](https://github.com/srimani-programmer/Breast-Cancer-Predictor/pulls).
 
 ### 6. Checkout to a new branch :bangbang:
 
-Whenever you are going to contribute. Please create a separate branch using command and keep your `main` branch clean (i.e. synced with remote branch).
+Whenever you are going to contribute. Please create a new separate branch using following command and keep your `main` branch clean (i.e. synced with remote branch).
 
 ```sh
 # It will create a new branch with name Branch_Name and switch to branch Folder_Name
