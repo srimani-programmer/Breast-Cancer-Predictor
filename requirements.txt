@@ -2,7 +2,7 @@ Click==7.0
 cycler==0.10.0
 Flask==1.1.1
 itsdangerous==1.1.0
-Jinja2==2.11.1
+Jinja2==2.11.3
 joblib==0.14.1
 kiwisolver==1.1.0
 MarkupSafe==1.1.1
@@ -17,3 +17,5 @@ scipy==1.4.1
 six==1.14.0
 sklearn==0.0
 Werkzeug==1.0.0
+tensorflow==2.3
+seaborn==0.11.1
