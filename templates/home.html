@@ -1,290 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Breast Cancer Prediction</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Breast Cancer Prediction</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="/static/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 <body>
 
-{% include "footer.html" %}
-
-  <div class="container">
-    
-  {% include "tumor.html" %}
-
-
-
-    <div style="margin: 40px;padding: 20px;font-size: 1.3em;background-color: #67E6DC">
-
-      <ul class="nav nav-tabs" style="background-color: #67E6DC">
-        <li class="active"><a data-toggle="tab" href="#home" style="font-family: 'Balsamiq Sans', cursive;">What is Breast Cancer</a></li>
-        <li><a data-toggle="tab" href="#menu1" style="font-family: 'Balsamiq Sans', cursive;">Who gets Breast Cancer</a></li>
-        <li><a data-toggle="tab" href="#menu2" style="font-family: 'Balsamiq Sans', cursive;">What Are the Symptoms of Breast Cancer</a></li>
-      </ul>
-
-      <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
-          <h3 style="font-family: 'Balsamiq Sans', cursive;">What is Breast Cancer</h3>
-          <p style="font-family: 'Balsamiq Sans', cursive;">Cancers are typically named after the part of the body from which they originate. Breast cancer originates in the breast tissue. Like other cancers, breast cancer can invade and grow into the tissue surrounding the breast. It can also travel to other parts of the body and form new tumors, a process called metastasis..</p>
-        </div>
-        <div id="menu1" class="tab-pane fade">
-          <h3 style="font-family: 'Balsamiq Sans', cursive;">Who gets Breast Cancer</h3>
-          <p style="font-family: 'Balsamiq Sans', cursive;">Breast cancer ranks second as a cause of cancer death in women (after lung cancer). Today, about 1 in 8 women (12%) will develop breast cancer in her lifetime. The American Cancer Society estimated that in 2017, about 252,710 women will be diagnosed with invasive breast cancer and about 40,610 will die from the disease.</p>
-        </div>
-        <div id="menu2" class="tab-pane fade">
-          <h3 style="font-family: 'Balsamiq Sans', cursive;">Some Symptoms of Breast Cancer include:</h3>
-          <p>
-            <ul style="font-family: 'Balsamiq Sans', cursive;">
-              <li>A mass or lump, which may feel as small as a pea.</li>
-              <li>A change in the size, shape, or contour of the breast.</li>
-              <li>A blood-stained or clear fluid discharge from the nipple.</li>
-              <li>Redness of the skin on the breast or nipple.</li>
-              <li>An area that is distinctly different from any other area on either breast.</li>
-            </ul>
-          </p>
-        </div>
-      </div>
-    </div>
+<div class="container1 text-center" style="height:60vh" >
+	<div class="row">
+		<div class="col-md-12 col-sm-12"><h1 class="display-3" style="padding-bottom: 2rem;">Breast cancer predictor</h1>
+			<p style="font-size:18px;">This predicts whether the cancer is benign or malignant with an accuracy of more than 95%.</p>
+	</div>
+</div>
+</div>
+<svg style="display:block" class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffa7bb" fill-opacity="0.9" d="M0,0L40,5.3C80,11,160,21,240,53.3C320,85,400,139,480,170.7C560,203,640,213,720,208C800,203,880,181,960,160C1040,139,1120,117,1200,106.7C1280,96,1360,96,1400,96L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
 
 
-    <div style="background-color:#53E0BC; padding: 20px; margin: 40px">
+<div class="container-fluid" style="padding: 0;">
+	<div id="slides" style="margin-top:0" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1"></li>
+		<li data-target="#slides" data-slide-to="2"></li>
+		<li data-target="#slides" data-slide-to="3"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active" >
+			<div class="container" style="height:30rem">
+				<h1 class="display-4 heading1" >What is Breast Cancer?</h1>
+				<p class="para1">Cancers are typically named after the part of the body from which they originate. Breast cancer originates in the breast tissue. Like other cancers, breast cancer can invade and grow into the tissue surrounding the breast. It can also travel to other parts of the body and form new tumors, a process called metastasis?</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<div class="container" style="height:30rem">
+				<h1 class="display-4 heading1" >Who gets Breast Cancer?</h1>
+				<p class="para1">Breast cancer ranks second as a cause of cancer death in women (after lung cancer). Today, about 1 in 8 women (12%) will develop breast cancer in her lifetime. The American Cancer Society estimated that in 2017, about 252,710 women will be diagnosed with invasive breast cancer and about 40,610 will die from the disease.</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<div class="container" style="height:30rem">
+				<h1 class="display-4 heading1" >When do i see a doctor?</h1>
+				<p class="para1">If you find a lump or other change in your breast — even if a recent mammogram was normal — make an appointment with your doctor for prompt evaluation</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<div class="container" style="height:30rem">
+				<h1 class="display-4 heading1" >What are the Symptoms of Breast Cancer?</h1>
+				<p class="para1">A mass or lump, which may feel as small as a pea.
+					A change in the size, shape, or contour of the breast.
+					A blood-stained or clear fluid discharge from the nipple.
+					Redness of the skin on the breast or nipple.
+					An area that is distinctly different from any other area on either breast</p>
+			</div>
+		</div>
+	
+	</div>
+	</div>
+	<svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill=" #FFB0C2" fill-opacity="1" d="M0,192L48,160C96,128,192,64,288,42.7C384,21,480,43,576,74.7C672,107,768,149,864,154.7C960,160,1056,128,1152,122.7C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 
-      <form class="form-horizontal" action="/predict" method="post">
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value1" style="font-family: 'Balsamiq Sans', cursive;">Radius Mean</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value1" placeholder="Enter radius_mean" name="value1"  required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value2" style="font-family: 'Balsamiq Sans', cursive;">Texture Mean</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value2" placeholder="Enter texture_mean" name="value2" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value3" style="font-family: 'Balsamiq Sans', cursive;">Perimeter Mean</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value3" placeholder="Enter perimeter_mean" name="value3" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value4" style="font-family: 'Balsamiq Sans', cursive;">Area Mean</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value4" placeholder="Enter area_mean" name="value4" required>
-          </div>
-        </div>
-
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value5" style="font-family: 'Balsamiq Sans', cursive;">Smoothness Mean</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value5" placeholder="Enter smoothness_mean" name="value5" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value6" style="font-family: 'Balsamiq Sans', cursive;">Compactness Mean</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value6" placeholder="Enter compactness_mean" name="value6" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value7" style="font-family: 'Balsamiq Sans', cursive;">Concavity Mean</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value7" placeholder="Enter concavity_mean" name="value7" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value8" style="font-family: 'Balsamiq Sans', cursive;">Concave Points Mean</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value8" placeholder="Enter concave points_mean" name="value8" required>
-          </div>
-        </div>
-
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value9" style="font-family: 'Balsamiq Sans', cursive;">Symmetry Mean</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value9" placeholder="Enter symmetry_mean" name="value9" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value10" style="font-family: 'Balsamiq Sans', cursive;">Fractal Dimension Mean</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value10" placeholder="Enter fractal_dimension_mean" name="value10" required>
-          </div>
-        </div>
-
-        
-
-        
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value11" style="font-family: 'Balsamiq Sans', cursive;">Radius SE</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value11" placeholder="Enter radius_se" name="value11" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value12" style="font-family: 'Balsamiq Sans', cursive;">Texture SE</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value12" placeholder="Enter texture_se" name="value12" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value13" style="font-family: 'Balsamiq Sans', cursive;">Perimeter SE</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value13" placeholder="Enter perimeter_se" name="value13" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value14" style="font-family: 'Balsamiq Sans', cursive;">Area SE</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value14" placeholder="Enter area_se" name="value14" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value15" style="font-family: 'Balsamiq Sans', cursive;">Smoothness SE</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value15" placeholder="Enter smoothness_se" name="value15" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value16" style="font-family: 'Balsamiq Sans', cursive;">Compactness SE</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value16" placeholder="Enter compactness_se" name="value16" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value17" style="font-family: 'Balsamiq Sans', cursive;">Concavity SE</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value17" placeholder="Enter concavity_se" name="value17" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value18" style="font-family: 'Balsamiq Sans', cursive;">Concave Points SE</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value18" placeholder="Enter concave points_se" name="value18" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value19" style="font-family: 'Balsamiq Sans', cursive;">Symmetry SE</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value19" placeholder="Enter symmetry_se" name="value19" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value20" style="font-family: 'Balsamiq Sans', cursive;">Fractal Dimension SE</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value20" placeholder="Enter fractal_dimension_se" name="value20" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value21" style="font-family: 'Balsamiq Sans', cursive;">Radius Worst</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value21" placeholder="Enter radius_worst" name="value21" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value22" style="font-family: 'Balsamiq Sans', cursive;">Texture Worst</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value22" placeholder="Enter texture_worst" name="value22" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value23" style="font-family: 'Balsamiq Sans', cursive;">Perimeter Worst</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value23" placeholder="Enter perimeter_worst" name="value23" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value24" style="font-family: 'Balsamiq Sans', cursive;">Area Worst</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value24" placeholder="Enter area_worst" name="value24" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value25" style="font-family: 'Balsamiq Sans', cursive;">Smoothness Worst</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value25" placeholder="Enter smoothness_worst" name="value25" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value26" style="font-family: 'Balsamiq Sans', cursive;">Compactness Worst</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value26" placeholder="Enter compactness_worst" name="value26" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value27" style="font-family: 'Balsamiq Sans', cursive;">Concavity Worst</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value27" placeholder="Enter concavity_worst" name="value27" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value28" style="font-family: 'Balsamiq Sans', cursive;">Concave Points Worst</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value28" placeholder="Enter concave points_worst" name="value28" required>
-          </div>
-        </div>
-
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value29" style="font-family: 'Balsamiq Sans', cursive;">Symmetry Worst</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value29" placeholder="Enter symmetry_worst" name="value29" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="value30" style="font-family: 'Balsamiq Sans', cursive;">Fractal Dimension Worst</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="value30" placeholder="Enter fractal_dimension_worst" name="value30" required>
-          </div>
-        </div>        
-        <div class="form-group">        
-          <div class="col-sm-offset-2 col-sm-10">
-            <input class="btn btn-primary" type="submit" name="Submit Request">
-          </div>
-        </div>
-      </form>
-      
-    </div>
-
-    {% include "copyrights.html" %}
-
-  </div>  
-
-
+<div class="container-fluid" style="display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;height:80vh;" >
+<div class="col-md-4 col-lg-2">
+<form action="/redirect" method="post">
+  <button type="submit" class="btn  btn-block" style="background-color:#FFB0C2;font-size: 30px;margin-bottom:40px;">Predict</button>
+</form>
+</div>
 </div>
 
+<div style="padding-bottom: 100px;">
+<h1 class="display-4"  style="display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;" >Meet the Contributors!</h1>
+<hr style="width:15%;color:#FFB0C2; border:2px solid #FFB0C2;margin-bottom:30px">
+
+<div class="card-group" style="width:90%;margin:auto">
+
+    <div class="card m-10" style="height:400px;margin-left:20px; box-shadow: -1px 3px 12px rgba(187, 195, 197, 0.6);">
+      <div class="card-body text-center">
+		<img src="https://avatars1.githubusercontent.com/u/42272691?v=4" alt="" style="border-radius: 50%;width:50%;">
+		<h2 style="padding-top:20px;padding-bottom:20px;">Sri Manikanta Palakollu</h2>
+		<a href="https://github.com/srimani-programmer"><i class="fab fa-github fa-3x" style="color:black"></i></a>
+      </div>
+	</div>
+
+	<div class="card m-10" style="height:400px;margin-left:20px; box-shadow: -1px 3px 12px rgba(187, 195, 197, 0.6);">
+      <div class="card-body text-center">
+		<img src="https://avatars1.githubusercontent.com/u/53931841?v=4" alt="" style="border-radius: 50%;width:50%;">
+		<h2 style="padding-top:20px;padding-bottom:20px;">Manan Bedi</h2>
+		<a href="https://github.com/manan-bedi2908"><i class="fab fa-github fa-3x"style="color:black" ></i></a>
+      </div>
+    </div>
+	
+	<div class="card m-10" style="height:400px;margin-left:20px; box-shadow: -1px 3px 12px rgba(187, 195, 197, 0.6);">
+		<div class="card-body text-center">
+		  <img src="https://avatars0.githubusercontent.com/u/55224891?v=4" alt="" style="border-radius: 50%;width:50%;">
+		  <h2 style="padding-top:20px;padding-bottom:20px;">Amandeep</h2>
+		  <a href="https://github.com/amandp13"><i class="fab fa-github fa-3x " style="color:black" ></i></a>
+		</div>
+	  </div>
+</div>
+</div>
 </body>
 </html>
+
+
+
+
+

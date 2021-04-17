@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+body{
+  padding:0;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  transition: all 0.5 ease;
+   position: relative;
+
+}
+
+.div1{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  height:200px;
+  width:200px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 25px;
+
+}
+input::-webkit-input-placeholder {
+  font-size: 20px;
+  line-height: 3;
+}
+.up{
+  margin-bottom: 95%;
+  cursor:pointer;
+}
+
+.down{
+  margin-top: 95%;
+  cursor:pointer;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+input[type="text"],input[type="text"]:focus,input[type="text"]:hover{
+  border:none;
+  border-bottom: 6px solid black;
+  color:black;
+  outline:none;
+  background-color: white;
+  width:300px;
+  height:500px;
+
+  font-size: large;
+  
+}
+
+
+div.inactive{
+  
+  opacity:0;
+  pointer-events: none;
+  transform:translate(-50%,-50%);
+}
+
+div.active{
+  opacity:1;
+  pointer-events:all;
+  transform: translate(-50%,-50%);
+}
+
+
+/*Extra small (xs) devices (portrait phones, less than 576px)*/
+@media (min-width: 200px){
+  input[type="text"],input[type="text"]:focus,input[type="text"]:hover{
+
+    width:250px;
+    font-size:20px;
+    
+  } 
+  #first{
+  width: 50px;
+  }
+  #ribbon{
+    width: 100px;
+    height:100px;
+  
+  }
+  #ribbon{
+    width:50%;
+    height:35%;
+    margin-top:100px;
+    margin-left:20px;
+  }
+
+}
+
+/*Small (sm) devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  input[type="text"],input[type="text"]:focus,input[type="text"]:hover{
+
+    width:250px;
+    font-size:25px;
+    
+    
+  } 
+  #first{
+    width: 50px
+  
+  }
+ 
+  #ribbon{
+    width:50%;
+    height:35%;
+    margin-top:100px;
+    margin-left:20px;
+  }
+
+
+}
+
+
+/*Medium (md) devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+  input[type="text"],input[type="text"]:focus,input[type="text"]:hover{
+    width:400px;
+
+
+    
+  }
+  #first{
+    width: 100px;
+  
+  }
+   
+  #ribbon{
+    width:50%;
+    height:50%;
+    margin-left:50px;
+
+  }
+
+ 
+}
+
+
+/*Large (lg) devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+  input[type="text"],input[type="text"]:focus,input[type="text"]:hover{
+    width:400px;
+  }
+   
+  #ribbon{
+    margin-top:250px;
+    width:50%;
+    height:40%;
+    margin-left:50px;
+
+  }
+}
+
+/*Extra (xl) large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+     
+  #ribbon{
+    margin-top:100px;
+    width:70%;
+    height:70%;
+    margin-left:50px;
+
+  }
+
+}
