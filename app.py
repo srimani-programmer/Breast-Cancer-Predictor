@@ -1,20 +1,52 @@
-from flask import Flask, render_template, request
-from implementation import randorm_forest_test, random_forest_train, random_forest_predict
-from sklearn.preprocessing import StandardScaler
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
+import os
+from flask import Flask, render_template, request, redirect, session
+from flask_sqlalchemy import SQLAlchemy
+#from implementation import randorm_forest_test, random_forest_train, random_forest_predict
+import implementation
+#from sklearn.preprocessing import StandardScaler
+#import numpy as np
+#import matplotlib.pyplot as plt
+#import pandas as pd
 from random_forest import accuracy
-from sklearn.metrics import accuracy_score
+#from sklearn.metrics import accuracy_score
 from time import time
 
+# Importing the database file from the SQLITE database ---------------------------------------------- o
+project_dir = os.path.dirname(os.path.abspath(__file__))										     #|
+database_file = "sqlite:///{}".format(os.path.join(project_dir, "Breast-Cancer-Predictor-Users.db")) #|
+# --------------------------------------------------------------------------------------------------- o
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
+app.config['SQLALCHEMY_DATABASE_URI'] = database_file
+
+# Initializing the reference variable for the database connect -o
+db = SQLAlchemy(app)										   #|
+# --------------------------------------------------------------o
+
+# Initializing the User data Model ----------------------o
+class User(db.Model):									#|
+    name = db.Column(db.String(30), nullable=False)     #|
+    email = db.Column(db.String(40), primary_key=True)  #|
+# -------------------------------------------------------o
+
+
 
 @app.route('/')
 def index():
 	return render_template('home.html')
+
+# BELOW, USER DATA HAS BEEN ADDED 
+@app.route('/insert', methods=['POST','GET'])
+def get_to_know():
+	user = User(name=request.form['name'], email=request.form['email'])
+	if user.name == '' and user.email == '':
+		return redirect('/')
+	else:
+		db.session.add(user)
+		db.session.commit()
+		return redirect('/')
+
 
 @app.route('/predict', methods=['POST']) 
 def login_user():
@@ -50,6 +82,7 @@ def login_user():
 	
 
 if __name__=='__main__':
+	db.create_all()
 	global clf 
 	clf = random_forest_train()
 	randorm_forest_test(clf)
