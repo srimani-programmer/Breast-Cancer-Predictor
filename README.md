@@ -9,13 +9,13 @@
 
 ## Please follow the Code of Conduct: [Code of Conduct](https://github.com/srimani-programmer/Breast-Cancer-Predictor/blob/master/CODE_OF_CONDUCT.md)
 # Aim of the Project
-#### > To predict if a breast cancer is Malignant or Benign using Image Dataset as well as Numerical Data
+#### > To predict if breast cancer is Malignant or Benign using Image Dataset as well as Numerical Data
 #### > Apply ML and DL Models to predict the severity of the Breast-Cancer
 #### > Create a Wonderful UI for this project using Front End Languages and Frameworks (Like Bootstrap)
 #### > Create the Backend using Flask Framework.
-#### > Deploy on Cloud and make this wonderful project available to public
+#### > Deploy on Cloud and make this wonderful project available to the public
 
-#### Note: Kindly do not push any changes to Main or Master Branch. A New Branch named "New_Pipeline" is already created and push all the changes to this branch
+#### Note: Kindly do not push any changes to the Main or Master Branch. A New Branch named "New_Pipeline" is already created and push all the changes to this branch
 #### Don't forget to create an issue before making a PR
 :point_right: Repo Link : [https://github.com/srimani-programmer/Breast-Cancer-Predictor/](https://github.com/srimani-programmer/Breast-Cancer-Predictor/)
 
@@ -42,7 +42,7 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   * Python: language
   * NumPy: library for numerical calculations
   * Pandas: library for data manipulation and analysis
-  * SkLearn: library which features various classification, regression and clustering algorithms
+  * SkLearn: library which features various classification, regression, and clustering algorithms
   * Flask: microframework for building web applications using Python.
   
 ## Project Setup
@@ -52,14 +52,14 @@ The data is prepossessed and scaled. I have trained with Random forest Classifie
   ```sh
   $ conda create -n myenv python=3.6
   ```
-  * Install the required packages using requirements.txt inside the environemnt using pip.
+  * Install the required packages using requirements.txt inside the environment using pip.
   ```sh
   $ pip install -r requirements.txt
   ```
   * run the app.py as `python app.py`
   * Web Application will be hosted at  `127.0.0.1:5000`
   * Enter the URL in the browser Application will be hosted.
-  * Enter the details of the tumor to detect the type of the cancer with more than 95% accuracy.
+  * Enter the details of the tumor to detect the type of cancer with more than 95% accuracy.
 
 ## Steps to follow :scroll:
 
@@ -75,7 +75,7 @@ Star the repo by pressing the topmost-right button to start your wonderful journ
 
 `NOTE: commands are to be executed on Linux, Mac, and Windows`
 
-You need to clone (download) it to local machine using
+You need to clone (download) it to a local machine using
 
 ```sh
 $ git clone https://github.com/Your_Username/Breast-Cancer-Predictor.git
@@ -83,7 +83,7 @@ $ git clone https://github.com/Your_Username/Breast-Cancer-Predictor.git
 
 > This makes a local copy of the repository in your machine.
 
-Once you have cloned the `Breast-Cancer-Predictor' repository in Github, move to that folder first using change directory command on Linux, Mac, and Windows
+Once you have cloned the `Breast-Cancer-Predictor' repository in Github, move to that folder first using the change directory command on Linux, Mac, and Windows
 ```sh
 # This will change directory to a folder Hacktoberfest_20
 $ cd Breast-Cancer-Predictor
@@ -118,7 +118,7 @@ origin    https://github.com/Your_Username/Breast-Cancer-Predictor.git (push)
 upstream  https://github.com/Remote_Username/Breast-Cancer-Predictor.git (fetch)
 upstream  https://github.com/Remote_Username/Breast-Cancer-Predictor.git (push)
 ```
-`In your case, you will see`
+`In your case, you will see
 ```sh
 $ git remote -V
 origin    https://github.com/Your_Username/Breast-Cancer-Predictor.git (fetch)
@@ -155,11 +155,11 @@ Once you have completed these steps, you are ready to start contributing to the 
 Whenever you are going to contribute. Please create a separate branch using command and keep your `main` branch clean (i.e. synced with remote branch).
 
 ```sh
-# It will create a new branch with name Branch_Name and switch to branch Folder_Name
+# It will create a new branch with the name Branch_Name and switch to branch Folder_Name
 $ git checkout -b New_Pipeline
 ```
 
-Create a separate branch for contribution and try to use the same name of the branch as of folder.
+Create a separate branch for contribution and try to use the same name of the branch as in the folder.
 
 To switch to the desired branch
 
@@ -190,8 +190,8 @@ $ git push -u origin New_Pipeline
 ```
 
 
-(Kindly push all the changes to the "New_Pipeline", not main branch)
-Finally, go to your repository in the browser and click on `compare and pull requests`.
+(Kindly push all the changes to the "New_Pipeline", not the main branch)
+Finally, go to your repository in the browser and click on `compare and pull requests.
 Then add a title and description to your pull request that explains your precious effort.
 
 
@@ -241,3 +241,5 @@ Then add a title and description to your pull request that explains your preciou
 </a>
 
 Made with [contributors-img](https://contributors-img.web.app).
+
+
