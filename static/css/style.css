@@ -144,9 +144,7 @@ figure {
 
 /*Large (lg) devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
-  .container{
-    height:10rem;
-  }
+  
   .heading1{
     font-size:60px;
     margin-top:5px;
@@ -172,14 +170,7 @@ figure {
 }
 
 
-.demo
-{
-	padding: 100px 0;
-}
-.heading-title
-{
-	margin-bottom: 100px;
-}
+
 .our-team{
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
     text-align: center;
@@ -352,10 +343,6 @@ figure {
     text-transform: capitalize;
 }
 
-@media only screen and (max-width: 990px){
-    .our-team{ margin-bottom: 35px; }
-}@charset "utf-8";
-/* CSS Document */
 
 
 
