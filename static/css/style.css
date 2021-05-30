@@ -75,6 +75,16 @@ figure {
       
 
 }
+.myheading
+{
+  font-size:4rem;
+}
+@media screen and (max-width: 992px) {
+  .myheading
+  {
+    font-size:2rem;
+  } 
+}
 
 .to-top {
   background: #FC0FC0;
@@ -103,61 +113,6 @@ figure {
 
 .to-top.active:hover{
   color:white;
-}
-
-/*Extra small (xs) devices (portrait phones, less than 576px)*/
-@media (min-width: 200px){
-  .heading1{
-    font-size:35px;
-    margin-top:30px;
-  }
-  .para1{
-    margin-top:30px;
-  } 
-}
-
-/*Small (sm) devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-  .heading1{
-    font-size:50px;
-    margin-top:5px;
-  }
-  .para1{
-    font-size:15px;
-    margin-top:30px;
-  }
-
-}
-
-/*Medium (md) devices (tablets, 768px and up)*/
-@media (min-width: 768px) { 
-  .heading1{
-    font-size:60px;
-    margin-top:5px;
-  }
-  .para1{
-    font-size:20px;
-    margin-top:30px;
-  }
- 
-}
-
-/*Large (lg) devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
-  
-  .heading1{
-    font-size:60px;
-    margin-top:5px;
-  }
-  .para1{
-    font-size:20px;
-    margin-top:30px;
-  }
-}
-
-/*Extra (xl) large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-
 }
 
 .form-group input{
