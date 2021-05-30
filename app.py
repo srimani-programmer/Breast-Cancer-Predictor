@@ -54,7 +54,14 @@ def login_user():
 	else:
 		acc1=acc_y
 	return render_template('result.html', output=output, accuracy=accuracy, time=t)
-
+# app name
+@app.errorhandler(404)
+  
+# inbuilt function which takes error as parameter
+def not_found(e):
+  
+# defining function
+  return render_template("404.html")
 	
 
 if __name__=='__main__':
