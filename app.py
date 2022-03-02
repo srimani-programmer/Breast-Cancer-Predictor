@@ -53,7 +53,7 @@ def login_user():
 		acc1 = acc_x
 	else:
 		acc1=acc_y
-	return render_template('result.html', output=output, accuracy=accuracy, time=t)
+	return render_template('result.html', output=output, accuracy=acc1, m_accuracy = accuracy, time=t)
 
 	
 
