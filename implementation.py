@@ -43,6 +43,29 @@ def randorm_forest_test(clf):
 	print("The accuracy of testing data: ",acc)
 	print("The running time: ",time()-t)
 
+
+# For final prediction after the train and testing has been done and result accuracy is acceptable.
+def random_forest_final():
+	dataset = pd.read_csv('Breast Cancer Data.csv')
+	X = dataset.iloc[:, 2:32].values
+	y = dataset.iloc[:, 1].values
+
+	# Encoding categorical data
+	from sklearn.preprocessing import LabelEncoder
+	labelencoder_X_1 = LabelEncoder()
+	y = labelencoder_X_1.fit_transform(y)
+
+	# Feature Scaling
+	from sklearn.preprocessing import StandardScaler
+	global sc
+	sc = StandardScaler()
+	X = sc.fit_transform(X)
+
+	clf = RandomForestClassifier(n_estimators=100)
+	clf.fit(X, y)
+
+	return clf
+
 def random_forest_predict(clf, inp):
 	t = time()
 	inp = sc.transform(inp)
