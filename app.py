@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from implementation import randorm_forest_test, random_forest_train, random_forest_predict
+from implementation import random_forest_final, randorm_forest_test, random_forest_train, random_forest_predict
 from sklearn.preprocessing import StandardScaler
 import numpy as np
 import matplotlib.pyplot as plt
@@ -59,7 +59,7 @@ def login_user():
 
 if __name__=='__main__':
 	global clf 
-	clf = random_forest_train()
-	randorm_forest_test(clf)
+	clf = random_forest_final()
+	#randorm_forest_test(clf) Testing need not to be performed everytime a request is made.
 	#print("Done")
 	app.run(debug=True)
