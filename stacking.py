@@ -2,11 +2,9 @@
 # Part 1 - Data Preprocessing
 
 # Importing the libraries
-from lightgbm import LGBMClassifier
-import numpy as np
+
 import matplotlib.pyplot as plt
 import pandas as pd
-from sklearn import metrics
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
