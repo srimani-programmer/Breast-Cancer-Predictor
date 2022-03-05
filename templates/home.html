@@ -5,87 +5,27 @@
   <title>Breast Cancer Prediction</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Breast Cancer Prediction is an online predictor with an accuracy of more than 95%.">
+  <meta name="keywords" content="Breast Cancer Prediction, Machine Learning Prediction">
+  <meta name="author" content="Srimani Programmer">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    /* css for back to top button */
-    html {
-      scroll-behavior: smooth;
-    }
-
-    a,
-    a:hover {
-      text-decoration: none;
-    }
-
-    #button {
-      display: inline-block;
-      background-color: #01CBC6;
-      width: 52px;
-      height: 52px;
-      text-align: center;
-      border-radius: 25px;
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      transition: background-color .3s,
-        opacity .5s, visibility .5s;
-      opacity: 0;
-      visibility: hidden;
-      z-index: 1000;
-    }
-
-    #button::after {
-      content: "\f077";
-      font-family: FontAwesome;
-      font-weight: normal;
-      font-style: normal;
-      font-size: 2em;
-      line-height: 50px;
-      color: #fff;
-    }
-
-    #button:hover {
-      cursor: pointer;
-      background-color: lightgreen;
-    }
-
-    #button:active {
-      background-color: lightgreen;
-    }
-
-    #button.show {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    /* Styles for the content section */
-
-
-    @media (min-width: 500px) {
-
-      #button {
-        margin: 30px;
-      }
-    }
-  </style>
+  <link href="{{url_for('static',filename='css/index.css')}}" rel="stylesheet">
+  </link>
 </head>
 
 <body>
   <!-- Back to top button -->
-  <a id="button"></a>
+  <section id="button"></section>
 
-
-  {% include "footer.html" %}
+  {% include "header.html" %}
 
   <div class="container">
 
     {% include "tumor.html" %}
-
-
 
     <div style="margin: 40px;padding: 20px;font-size: 1.3em;background-color: #67E6DC">
 
@@ -128,9 +68,7 @@
       </div>
     </div>
 
-
     <div style="background-color:#53E0BC; padding: 20px; margin: 40px">
-
       <form class="form-horizontal" action="/predict" method="post">
         {% for value in values %}
         <div class="form-group">
@@ -142,6 +80,7 @@
           </div>
         </div>
         {% endfor %}
+
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
             <input class="btn btn-primary" type="submit" name="Submit Request">
@@ -154,15 +93,12 @@
     {% include "copyrights.html" %}
 
   </div>
-
-
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <script>
     var btn = $('#button');
-
     $(window).scroll(function () {
       if ($(window).scrollTop() > 300) {
         btn.addClass('show');
@@ -170,13 +106,10 @@
         btn.removeClass('show');
       }
     });
-
     btn.on('click', function (e) {
       e.preventDefault();
       $('html, body').animate({ scrollTop: 0 }, '300');
     });
-
-
   </script>
 </body>
 
