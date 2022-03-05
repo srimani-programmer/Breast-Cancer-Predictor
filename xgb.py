@@ -5,6 +5,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+from sklearn import metrics
 
 # Importing the dataset
 dataset = pd.read_csv('Breast Cancer Data.csv')
@@ -26,15 +27,16 @@ from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.svm import SVC
+from xgboost import XGBClassifier
+from sklearn.ensemble import  GradientBoostingClassifier
 from sklearn.metrics import accuracy_score
 from time import time
 
 t = time()
-svc_model = SVC(kernel="rbf")
-svc_model.fit(X_train, y_train)
-output = svc_model.predict(X_test)
+clf = XGBClassifier(n_estimators=100,random_state=1,eval_metric='mlogloss').fit(X_train, y_train)
+clf.fit(X_train, y_train)
+output = clf.predict(X_test)
 accuracy = accuracy_score(y_test, output) 
 print("The accuracy of testing data: ",accuracy)
 print("The running time: ",time()-t)
+
