@@ -1,0 +1,44 @@
+[2022-03-17 14:15:25,320: INFO: app] general log path : applicationLogs\logs\general_logs.log
+[2022-03-17 14:15:25,661: INFO: _internal]  * Restarting with windowsapi reloader
+[2022-03-17 14:15:29,620: INFO: app] general log path : applicationLogs\logs\general_logs.log
+[2022-03-17 14:15:29,816: WARNING: _internal]  * Debugger is active!
+[2022-03-17 14:15:29,826: INFO: _internal]  * Debugger PIN: 265-891-659
+[2022-03-17 14:15:29,867: INFO: _internal]  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2022-03-17 14:17:21,228: INFO: _internal]  * Detected change in 'C:\\Users\\umang\\Desktop\\Ineuron\\opensource\\New folder\\Breast-Cancer-Predictor\\app.py', reloading
+[2022-03-17 14:17:21,229: INFO: _internal]  * Detected change in 'C:\\Users\\umang\\Desktop\\Ineuron\\opensource\\New folder\\Breast-Cancer-Predictor\\app.py', reloading
+[2022-03-17 14:17:21,229: INFO: _internal]  * Detected change in 'C:\\Users\\umang\\Desktop\\Ineuron\\opensource\\New folder\\Breast-Cancer-Predictor\\app.py', reloading
+[2022-03-17 14:17:21,230: INFO: _internal]  * Detected change in 'C:\\Users\\umang\\Desktop\\Ineuron\\opensource\\New folder\\Breast-Cancer-Predictor\\app.py', reloading
+[2022-03-17 14:17:22,489: INFO: _internal]  * Restarting with windowsapi reloader
+[2022-03-17 14:17:25,741: INFO: app] general log path : applicationLogs\logs\general_logs.log
+[2022-03-17 14:17:25,937: WARNING: _internal]  * Debugger is active!
+[2022-03-17 14:17:25,944: INFO: _internal]  * Debugger PIN: 265-891-659
+[2022-03-17 14:17:25,979: INFO: _internal]  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2022-03-17 14:17:41,239: INFO: app] index page
+[2022-03-17 14:17:41,250: INFO: _internal]  * Detected change in 'C:\\Users\\umang\\Anaconda3\\Lib\\encodings\\__pycache__\\unicode_escape.cpython-38.pyc', reloading
+[2022-03-17 14:17:41,254: INFO: _internal] 127.0.0.1 - - [17/Mar/2022 14:17:41] "GET / HTTP/1.1" 200 -
+[2022-03-17 14:17:42,487: INFO: _internal]  * Restarting with windowsapi reloader
+[2022-03-17 14:17:46,553: INFO: app] general log path : applicationLogs\logs\general_logs.log
+[2022-03-17 14:17:46,795: WARNING: _internal]  * Debugger is active!
+[2022-03-17 14:17:46,808: INFO: _internal]  * Debugger PIN: 265-891-659
+[2022-03-17 14:17:46,855: INFO: _internal]  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2022-03-17 14:18:16,312: INFO: app] predict page
+[2022-03-17 14:18:16,313: INFO: app] []
+[2022-03-17 14:18:16,316: INFO: app] request.form : ImmutableMultiDict([('value1', '1'), ('value2', '1'), ('value3', '1'), ('value4', '1'), ('value5', '1'), ('value6', '1'), ('value7', '1'), ('value8', '1'), ('value9', '1'), ('value10', '1'), ('value11', '1'), ('value12', '1'), ('value13', '1'), ('value14', '1'), ('value15', '1'), ('value16', '1'), ('value17', '1'), ('value18', '1'), ('value19', '1'), ('value20', '1'), ('value21', '1'), ('value22', '1'), ('value23', '1'), ('value24', '1'), ('value25', '1'), ('value26', '1'), ('value27', '1'), ('value28', '1'), ('value29', '1'), ('value30', '1'), ('Submit Request', 'Submit')])
+[2022-03-17 14:18:16,317: INFO: _internal]  * Detected change in 'C:\\Users\\umang\\Anaconda3\\Lib\\site-packages\\flask\\__pycache__\\debughelpers.cpython-38.pyc', reloading
+[2022-03-17 14:18:16,321: INFO: app] data_np : [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
+ 1. 1. 1. 1. 1. 1.]
+[2022-03-17 14:18:16,321: INFO: app] Data reshape
+[2022-03-17 14:18:16,347: INFO: app] [0]
+[2022-03-17 14:18:16,348: INFO: app] output : Benign
+[2022-03-17 14:18:16,348: INFO: app] acc1 : 0.63
+[2022-03-17 14:18:16,358: INFO: _internal] 127.0.0.1 - - [17/Mar/2022 14:18:16] "POST /predict HTTP/1.1" 200 -
+[2022-03-17 14:18:17,539: INFO: _internal]  * Restarting with windowsapi reloader
+[2022-03-17 14:18:19,998: INFO: app] general log path : applicationLogs\logs\general_logs.log
+[2022-03-17 14:18:20,166: WARNING: _internal]  * Debugger is active!
+[2022-03-17 14:18:20,171: INFO: _internal]  * Debugger PIN: 265-891-659
+[2022-03-17 14:18:20,203: INFO: _internal]  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2022-03-17 14:19:46,608: INFO: _internal]  * Detected change in 'C:\\Users\\umang\\Desktop\\Ineuron\\opensource\\New folder\\Breast-Cancer-Predictor\\random_forest.py', reloading
+[2022-03-17 14:19:46,609: INFO: _internal]  * Detected change in 'C:\\Users\\umang\\Desktop\\Ineuron\\opensource\\New folder\\Breast-Cancer-Predictor\\random_forest.py', reloading
+[2022-03-17 14:19:46,609: INFO: _internal]  * Detected change in 'C:\\Users\\umang\\Desktop\\Ineuron\\opensource\\New folder\\Breast-Cancer-Predictor\\random_forest.py', reloading
+[2022-03-17 14:19:46,609: INFO: _internal]  * Detected change in 'C:\\Users\\umang\\Desktop\\Ineuron\\opensource\\New folder\\Breast-Cancer-Predictor\\random_forest.py', reloading
+[2022-03-17 14:19:47,839: INFO: _internal]  * Restarting with windowsapi reloader
