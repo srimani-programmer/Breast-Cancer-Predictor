@@ -1,0 +1,11 @@
+[2022-03-20 14:38:22,136: INFO: _internal]  * Restarting with stat
+[2022-03-20 14:38:26,916: WARNING: _internal]  * Debugger is active!
+[2022-03-20 14:38:27,003: INFO: _internal]  * Debugger PIN: 182-094-750
+[2022-03-20 14:38:27,041: INFO: _internal]  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2022-03-20 14:38:43,943: INFO: _internal]  * Restarting with stat
+[2022-03-20 14:38:48,809: WARNING: _internal]  * Debugger is active!
+[2022-03-20 14:38:48,891: INFO: _internal]  * Debugger PIN: 182-094-750
+[2022-03-20 14:38:48,924: INFO: _internal]  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2022-03-20 14:38:58,192: INFO: app] index page
+[2022-03-20 14:38:58,217: INFO: _internal] 127.0.0.1 - - [20/Mar/2022 14:38:58] "[37mGET / HTTP/1.1[0m" 200 -
+[2022-03-20 14:38:58,859: INFO: _internal] 127.0.0.1 - - [20/Mar/2022 14:38:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
