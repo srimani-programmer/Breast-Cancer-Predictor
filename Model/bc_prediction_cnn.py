@@ -1,7 +1,7 @@
 #Importing libraries
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
-from keras.models import Sequential
+from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Flatten, Dense, Dropout, MaxPooling1D,BatchNormalization
 from tensorflow.keras.layers import Conv1D
 from tensorflow.keras import layers,models
@@ -56,11 +56,12 @@ model.summary()
 model.compile(optimizer=Adam(learning_rate=0.00005), loss = 'binary_crossentropy', metrics=['accuracy'])
 
 history = model.fit(X_train, y_train, epochs=epochs, validation_data=(X_test, y_test), verbose=1,)
-
+#model.save("../cnn_model.h5")
 #testing over training dataset to create a confusuion matrix
 prediction = model.predict(X_train)
 #using 0.5 as a threshold value
 prediction_array = (prediction>0.5)
 
 results = model.evaluate(X_test, y_test)
-# accuracy: 0.949
+# accuracy: 0.969
+print(model.predict(X_test) > 0.5).astype("int32")
