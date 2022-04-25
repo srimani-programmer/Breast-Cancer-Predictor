@@ -6,31 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link href="static/css/style.css" rel="stylesheet">
 </head>
 <body>
-
-<div class="container-fluid" style="background-color: #fff">
-
-  {% include "footer.html" %}
-
-  <div class="container">
-    
-
-    <div class="jumbotron">
-      <h1>Cancer is Predicted to be {{ output }}</h1>      
-      <p>The Probability of {{ output }} is {{ accuracy * 100 }} %.</p>
-      <p>The time taken to predict is {{ time }} s.</p>
+  <div class="container1 text-center" style="height:50vh" >
+    <div class="row">
+      <div class="col-md-12 col-sm-12"><h1 class="display-3" style="padding-bottom: 2rem;">Cancer is Predicted to be {{ output }}</h1>
+              <p style="font-size:18px;text-align:left">The Probability of {{ output }} is {{ accuracy * 100 }} %</p>
+              <p style="font-size:18px;text-align:left">The time taken to predict is {{ time }} s</p>
     </div>
-
-    {% include "tumor.html" %}
-
-    {% include "copyrights.html" %}
-
-  </div>  
-
-
+  </div>
+  </div>
+  <div class="container-fluid" style="display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;padding:0;left:0;" >
+<div class="col-md-3 col-lg-2">
+<form action="/backtohome" method="post">
+  <button type="submit" class="btn  btn-block" style="background-color:#FFB0C2;font-size: 20px;">Back to home</button>
+</form>
 </div>
-
+</div>
+  <svg style="display:block" class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffa7bb" fill-opacity="0.9" d="M0,0L40,5.3C80,11,160,21,240,53.3C320,85,400,139,480,170.7C560,203,640,213,720,208C800,203,880,181,960,160C1040,139,1120,117,1200,106.7C1280,96,1360,96,1400,96L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
 </body>
 </html>
