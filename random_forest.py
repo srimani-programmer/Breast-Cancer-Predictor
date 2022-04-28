@@ -5,21 +5,22 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import logging
 
 # Importing the dataset
 dataset = pd.read_csv('Breast Cancer Data.csv')
 X = dataset.iloc[:, 2:32].values
 y = dataset.iloc[:, 1].values
-
+logging.info("Dataset imported")
 # Encoding categorical data
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 labelencoder_X_1 = LabelEncoder()
 y = labelencoder_X_1.fit_transform(y)
-
+logging.info("Categorical data encoded")
 # Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
-
+logging.info("Dataset split into training and test sets")
 
 # Feature Scaling
 from sklearn.preprocessing import StandardScaler
@@ -36,5 +37,5 @@ clf = RandomForestClassifier()
 clf.fit(X_train, y_train)
 output = clf.predict(X_test)
 accuracy = accuracy_score(y_test, output) 
-print("The accuracy of testing data: ",accuracy)
-print("The running time: ",time()-t)
+logging.info("The accuracy of testing data: ",accuracy)
+logging.info("The running time: ",time()-t)

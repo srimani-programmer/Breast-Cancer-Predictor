@@ -1,0 +1,2 @@
+Here is the link to all models used for transfer learning in .pkl and .h5 format
+https://drive.google.com/drive/folders/18wePW1YJGkidiMzhyYsXiCJLAfN9GxUW?usp=sharing
