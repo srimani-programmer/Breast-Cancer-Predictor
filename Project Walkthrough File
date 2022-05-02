@@ -1,0 +1,17 @@
+This file is to provide a basic walkthrough of what each folder/files in this repo means/stands for. To make contributions easier for you.
+<li> .Github:</li>
+<li> BCP_Image_Dataset:</li>
+<li> LOGO:</li>
+<li> __pycache__:</li>
+<li> static/images:</li>
+<li> templates:</li>
+<li> .gitattributes:</li>
+<li> .gitignore:</li>
+<li> Breast Cancer Data.csv:</li>
+<li> CODE_OF_CONDUCT.md:</li>
+<li> LICENSE:</li>
+<li> README.md:</li>
+<li> app.py:</li>
+<li> Implementation.py:</li>
+<li> random_forest.py:</li>
+<li> requirement.txt:</li>
