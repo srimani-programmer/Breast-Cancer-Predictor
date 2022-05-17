@@ -4,8 +4,10 @@
   <title>Breast Cancer Prediction</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel='shortcut icon' type="image/png" href='/static/images/icon.png' />
   <!-- Icon credit: https://www.flaticon.com/free-icons/breast-cancer-->
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -134,6 +136,7 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value1" style="font-family: 'Balsamiq Sans', cursive;">Radius Mean</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value1" placeholder="Enter radius_mean" name="value1"  required>
           
           	<!--  We can use select as well as datalist to display a dropdown, here I'm using datalist-->
 		<!--<select name="value1"  class="form-control"  placeholder="Enter radius_mean"
@@ -159,6 +162,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value2" style="font-family: 'Balsamiq Sans', cursive;">Texture Mean</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value2" placeholder="Enter texture_mean" name="value2" required>
+
             <input type="text" list = "values2" class="form-control" placeholder="Enter texture_mean" name="value2" id = "value2" required/>
             <datalist id="values2" >
 		  {% for i in range(0,4) %}
@@ -171,6 +176,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value3" style="font-family: 'Balsamiq Sans', cursive;">Perimeter Mean</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value3" placeholder="Enter perimeter_mean" name="value3" required>
+
             <input type="text" list = "values3" class="form-control" placeholder="Enter perimeter_mean" name="value3" id = "value3" required/>
             <datalist id="values3" >
 		  {% for i in range(0,4) %}
@@ -183,6 +190,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value4" style="font-family: 'Balsamiq Sans', cursive;">Area Mean</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value4" placeholder="Enter area_mean" name="value4" required>
+
             <input type="text" list = "values4" class="form-control" placeholder="Enter area_mean" name="value4" id = "value4" required/>
             <datalist id="values4" >
 		  {% for i in range(0,4) %}
@@ -196,6 +205,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value5" style="font-family: 'Balsamiq Sans', cursive;">Smoothness Mean</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value5" placeholder="Enter smoothness_mean" name="value5" required>
+
             <input type="text" list = "values5" class="form-control" placeholder="Enter smoothness_mean" name="value5" id = "value5" required/>
             <datalist id="values5" >
 		  {% for i in range(0,4) %}
@@ -208,6 +219,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value6" style="font-family: 'Balsamiq Sans', cursive;">Compactness Mean</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value6" placeholder="Enter compactness_mean" name="value6" required>
+
             <input type="text" list = "values6" class="form-control" placeholder="Enter compactness_mean" name="value6" id = "value6" required/>
             <datalist id="values6" >
 		  {% for i in range(0,4) %}
@@ -220,6 +233,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value7" style="font-family: 'Balsamiq Sans', cursive;">Concavity Mean</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value7" placeholder="Enter concavity_mean" name="value7" required>
+
             <input type="text" list = "values7" class="form-control" placeholder="Enter concavity_mean" name="value7" id = "value7" required/>
             <datalist id="values7" >
 		  {% for i in range(0,4) %}
@@ -232,6 +247,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value8" style="font-family: 'Balsamiq Sans', cursive;">Concave Points Mean</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value8" placeholder="Enter concave points_mean" name="value8" required>
+
             <input type="text" list = "values8" class="form-control" placeholder="Enter concave_points_mean" name="value8" id = "value8" required/>
             <datalist id="values8" >
 		  {% for i in range(0,4) %}
@@ -245,6 +262,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value9" style="font-family: 'Balsamiq Sans', cursive;">Symmetry Mean</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value9" placeholder="Enter symmetry_mean" name="value9" required>
+
             <input type="text" list = "values9" class="form-control" placeholder="Enter symmetry_mean" name="value9" id = "value9" required/>
             <datalist id="values9" >
 		  {% for i in range(0,4) %}
@@ -257,6 +276,12 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value10" style="font-family: 'Balsamiq Sans', cursive;">Fractal Dimension Mean</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value10" placeholder="Enter fractal_dimension_mean" name="value10" required>
+          </div>
+        </div>
+
+        
+
             <input type="text" list = "values10" class="form-control" placeholder="Enter fractal_dimension_mean" name="value10" id = "value10" required/>
             <datalist id="values10" >
 		  {% for i in range(0,4) %}
@@ -269,6 +294,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value11" style="font-family: 'Balsamiq Sans', cursive;">Radius SE</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value11" placeholder="Enter radius_se" name="value11" required>
+
             <input type="text" list = "values11" class="form-control" placeholder="Enter radius_se" name="value11" id = "value11" required/>
             <datalist id="values11" >
 		  {% for i in range(0,4) %}
@@ -281,6 +308,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value12" style="font-family: 'Balsamiq Sans', cursive;">Texture SE</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value12" placeholder="Enter texture_se" name="value12" required>
+
 	    <input type="text" list = "values12" class="form-control" placeholder="Enter texture_se" name="value12" id = "value12" required/>
             <datalist id="values12" >
 		  {% for i in range(0,4) %}
@@ -293,6 +322,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value13" style="font-family: 'Balsamiq Sans', cursive;">Perimeter SE</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value13" placeholder="Enter perimeter_se" name="value13" required>
+
             <input type="text" list = "values13" class="form-control" placeholder="Enter perimeter_se" name="value13" id = "value13" required/>
             <datalist id="values13" >
 		  {% for i in range(0,4) %}
@@ -305,6 +336,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value14" style="font-family: 'Balsamiq Sans', cursive;">Area SE</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value14" placeholder="Enter area_se" name="value14" required>
+
             <input type="text" list = "values14" class="form-control" placeholder="Enter area_se" name="value14" id = "value14" required/>
             <datalist id="values14" >
 		  {% for i in range(0,4) %}
@@ -317,6 +350,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value15" style="font-family: 'Balsamiq Sans', cursive;">Smoothness SE</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value15" placeholder="Enter smoothness_se" name="value15" required>
+
             <input type="text" list = "values15" class="form-control" placeholder="Enter smoothness_se" name="value15" id = "value15" required/>
             <datalist id="values15" >
 		  {% for i in range(0,4) %}
@@ -329,6 +364,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value16" style="font-family: 'Balsamiq Sans', cursive;">Compactness SE</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value16" placeholder="Enter compactness_se" name="value16" required>
+
             <input type="text" list = "values16" class="form-control" placeholder="Enter compactness_se" name="value16" id = "value16" required/>
             <datalist id="values16" >
 		  {% for i in range(0,4) %}
@@ -341,6 +378,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value17" style="font-family: 'Balsamiq Sans', cursive;">Concavity SE</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value17" placeholder="Enter concavity_se" name="value17" required>
+
             <input type="text" list = "values17" class="form-control" placeholder="Enter concavity_se" name="value17" id = "value17" required/>
             <datalist id="values17" >
 		  {% for i in range(0,4) %}
@@ -353,6 +392,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value18" style="font-family: 'Balsamiq Sans', cursive;">Concave Points SE</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value18" placeholder="Enter concave points_se" name="value18" required>
+
             <input type="text" list = "values18" class="form-control" placeholder="Enter concave_points_se" name="value18" id = "value18" required/>
             <datalist id="values18" >
 		  {% for i in range(0,4) %}
@@ -365,6 +406,8 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value19" style="font-family: 'Balsamiq Sans', cursive;">Symmetry SE</label>
           <div class="col-sm-10">
+            <input type="text" class="form-control" id="value19" placeholder="Enter symmetry_se" name="value19" required>
+
             <input type="text" list = "values19" class="form-control" placeholder="Enter symmetry_se" name="value19" id = "value19" required/>
             <datalist id="values19" >
 		  {% for i in range(0,4) %}
@@ -377,108 +420,144 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value20" style="font-family: 'Balsamiq Sans', cursive;">Fractal Dimension SE</label>
           <div class="col-sm-10">
+
+            <input type="text" class="form-control" id="value20" placeholder="Enter fractal_dimension_se" name="value20" required>
+
             <input type="text" list = "values20" class="form-control" placeholder="Enter fractal_dimension_se" name="value20" id = "value20" required/>
             <datalist id="values20" >
 		  {% for i in range(0,4) %}
 		      <option value="{{ i }}">{{ i }}</option>
 		  {% endfor %}
 	    </datalist>
+
           </div>
         </div>
 
         <div class="form-group">
           <label class="control-label col-sm-2" for="value21" style="font-family: 'Balsamiq Sans', cursive;">Radius Worst</label>
           <div class="col-sm-10">
+
+            <input type="text" class="form-control" id="value21" placeholder="Enter radius_worst" name="value21" required>
+
             <input type="text" list = "values21" class="form-control" placeholder="Enter radius_worst" name="value21" id = "value21" required/>
             <datalist id="values21" >
 		  {% for i in range(0,4) %}
 		      <option value="{{ i }}">{{ i }}</option>
 		  {% endfor %}
 	    </datalist>
+
           </div>
         </div>
 
         <div class="form-group">
           <label class="control-label col-sm-2" for="value22" style="font-family: 'Balsamiq Sans', cursive;">Texture Worst</label>
           <div class="col-sm-10">
+
+            <input type="text" class="form-control" id="value22" placeholder="Enter texture_worst" name="value22" required>
+
             <input type="text" list = "values22" class="form-control" placeholder="Enter texture_worst" name="value22" id = "value22" required/>
             <datalist id="values22" >
 		  {% for i in range(0,4) %}
 		      <option value="{{ i }}">{{ i }}</option>
 		  {% endfor %}
 	    </datalist>
+
           </div>
         </div>
 
         <div class="form-group">
           <label class="control-label col-sm-2" for="value23" style="font-family: 'Balsamiq Sans', cursive;">Perimeter Worst</label>
           <div class="col-sm-10">
+
+            <input type="text" class="form-control" id="value23" placeholder="Enter perimeter_worst" name="value23" required>
+
             <input type="text" list = "values23" class="form-control" placeholder="Enter perimeter_worst" name="value23" id = "value23" required/>
             <datalist id="values23" >
 		  {% for i in range(0,4) %}
 		      <option value="{{ i }}">{{ i }}</option>
 		  {% endfor %}
 	    </datalist>
+
           </div>
         </div>
 
         <div class="form-group">
           <label class="control-label col-sm-2" for="value24" style="font-family: 'Balsamiq Sans', cursive;">Area Worst</label>
           <div class="col-sm-10">
+
+            <input type="text" class="form-control" id="value24" placeholder="Enter area_worst" name="value24" required>
+
             <input type="text" list = "values24" class="form-control" placeholder="Enter area_worst" name="value24" id = "value24" required/>
             <datalist id="values24" >
 		  {% for i in range(0,4) %}
 		      <option value="{{ i }}">{{ i }}</option>
 		  {% endfor %}
 	    </datalist>
+
           </div>
         </div>
 
         <div class="form-group">
           <label class="control-label col-sm-2" for="value25" style="font-family: 'Balsamiq Sans', cursive;">Smoothness Worst</label>
           <div class="col-sm-10">
+
+            <input type="text" class="form-control" id="value25" placeholder="Enter smoothness_worst" name="value25" required>
+
             <input type="text" list = "values25" class="form-control" placeholder="Enter smoothness_worst" name="value25" id = "value25" required/>
             <datalist id="values25" >
 		  {% for i in range(0,4) %}
 		      <option value="{{ i }}">{{ i }}</option>
 		  {% endfor %}
 	    </datalist>
+
           </div>
         </div>
 
         <div class="form-group">
           <label class="control-label col-sm-2" for="value26" style="font-family: 'Balsamiq Sans', cursive;">Compactness Worst</label>
           <div class="col-sm-10">
+
+            <input type="text" class="form-control" id="value26" placeholder="Enter compactness_worst" name="value26" required>
+
             <input type="text" list = "values26" class="form-control" placeholder="Enter compactness_worst" name="value26" id = "value26" required/>
             <datalist id="values26" >
 		  {% for i in range(0,4) %}
 		      <option value="{{ i }}">{{ i }}</option>
 		  {% endfor %}
 	    </datalist>
+
           </div>
         </div>
 
         <div class="form-group">
           <label class="control-label col-sm-2" for="value27" style="font-family: 'Balsamiq Sans', cursive;">Concavity Worst</label>
           <div class="col-sm-10">
+
+            <input type="text" class="form-control" id="value27" placeholder="Enter concavity_worst" name="value27" required>
+
             <input type="text" list = "values27" class="form-control" placeholder="Enter concavity_worst" name="value27" id = "value27" required/>
             <datalist id="values27" >
 		  {% for i in range(0,4) %}
 		      <option value="{{ i }}">{{ i }}</option>
 		  {% endfor %}
 	    </datalist>
+
           </div>
         </div>
 
         <div class="form-group">
           <label class="control-label col-sm-2" for="value28" style="font-family: 'Balsamiq Sans', cursive;">Concave Points Worst</label>
           <div class="col-sm-10">
+
+            <input type="text" class="form-control" id="value28" placeholder="Enter concave points_worst" name="value28" required>
+
             <input type="text" list = "values28" class="form-control" placeholder="Enter concave_points_worst" name="value28" id = "value28" required/>
             <datalist id="values28" >
 		  {% for i in range(0,4) %}
 		      <option value="{{ i }}">{{ i }}</option>
 		  {% endfor %}
 	    </datalist>
+
           </div>
         </div>
 
@@ -486,24 +565,32 @@ function toggleField(hideObj,showObj){
         <div class="form-group">
           <label class="control-label col-sm-2" for="value29" style="font-family: 'Balsamiq Sans', cursive;">Symmetry Worst</label>
           <div class="col-sm-10">
+
+            <input type="text" class="form-control" id="value29" placeholder="Enter symmetry_worst" name="value29" required>
+
            <input type="text" list = "values29" class="form-control" placeholder="Enter symmetry_worst" name="value29" id = "value29" required/>
             <datalist id="values29" >
 		  {% for i in range(0,4) %}
 		      <option value="{{ i }}">{{ i }}</option>
 		  {% endfor %}
 	    </datalist>
+
           </div>
         </div>
 
         <div class="form-group">
           <label class="control-label col-sm-2" for="value30" style="font-family: 'Balsamiq Sans', cursive;">Fractal Dimension Worst</label>
           <div class="col-sm-10">
+
+            <input type="text" class="form-control" id="value30" placeholder="Enter fractal_dimension_worst" name="value30" required>
+
             <input type="text" list = "values30" class="form-control" placeholder="Enter fractal_dimension_worst" name="value30" id = "value30" required/>
             <datalist id="values30" >
 		  {% for i in range(0,4) %}
 		      <option value="{{ i }}">{{ i }}</option>
 		  {% endfor %}
 	    </datalist>
+
           </div>
         </div>        
         <div class="form-group">        
