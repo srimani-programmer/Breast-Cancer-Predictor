@@ -1,7 +1,41 @@
-<div class="well" style="margin: 40px; background-color:lightgreen;text-align: center;">
-    Developed by Sri Manikanta
-    <br>
-    &copy All rights reserved | 2020
-    <br>
-    Made in India with ❤️❤️❤️
-</div>
+<html>
+    <head>
+       <style>
+           .heart{
+           width: 10px;
+           height: 10px;
+           transform: rotate(45deg);
+           transform-origin: center;
+           position: relative;
+           background: red;
+           margin: 10px auto;
+        }
+        .heart::before, .heart::after{
+           content: '';
+           position: absolute;
+           width: 10px;
+           height: 10px;
+           border-radius: 50%;
+           background: red;
+        }
+        .heart::before{
+           left: -5px;
+        }
+        .heart::after{
+            top: -5px;
+            left: 0px;
+        }
+       </style>
+    </head>
+    <body>
+        
+        <div class="well" style="margin: 40px; background-color:lightgreen;text-align: center;">
+        Developed by Sri Manikanta
+        <br>
+        &copy All rights reserved | 2020
+        <br>
+        Made in India with 
+        <div class="heart"></div>
+    </div>
+    </body>
+    </html>
