@@ -54,6 +54,24 @@
     opacity: 1;
     visibility: visible;
   }
+
+  .btnloadcsv {
+    display: flex;
+    align-items: center;
+  }
+
+  .btnloadcsv {
+    
+    display: flex;
+    padding: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .btnloadcsv btn-csv {
+    padding: 20px;
+    margin-right: 20px;
+  }
   
   /* Styles for the content section */
   
@@ -337,6 +355,13 @@
           </div>
         </div>
       </form>
+
+      <div class="btnloadcsv">        
+        <!-- <div class="col-sm-10"> -->
+          <input class="btn-csv btn-upload-csv btn-primary" type="file" id="file" name="Upload CSV" accept=".csv">
+          <input class="btn-csv btn-read-csv btn-primary" id="btn-read-csv" type="button" name="Load CSV" value="Submit" onclick="readCSVFile();" >
+        <!-- </div> -->
+      </div>
       
     </div>
 
@@ -364,6 +389,22 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 
+      function readCSVFile() {
+        var fileInput = document.getElementById('file');
+        var file = fileInput.files[0];
+        var fileName = file.name;
+
+        fetch("../" + fileName).then(res => {
+          return res.text();
+        }).then(data => {
+          console.log(data);
+          var values = data.split(',');
+          for (let i = 1; i <= 30; i++) {
+            document.getElementById("value"+i).value = values[(i-1)].trim();
+          } 
+
+        });
+      }
 
     </script>
 </body>
